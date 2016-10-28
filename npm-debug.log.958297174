@@ -1,0 +1,1662 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.5.0/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.5.0/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   'gitbook-start-heroku-alex-moi' ]
+2 info using npm@2.15.9
+3 info using node@v4.5.0
+4 verbose install initial load of /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/package.json
+5 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/child-process/package.json
+6 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/child_process/package.json
+7 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/ejs/package.json
+8 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/fs/package.json
+9 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/fs-extended/package.json
+10 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/fs-extra/package.json
+11 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gh-pages/package.json
+12 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-cli/package.json
+13 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/package.json
+14 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-iaas-ull-es-alex-moi/package.json
+15 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gulp/package.json
+16 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gulp-git/package.json
+17 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gulp-shell/package.json
+18 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/minimist/package.json
+19 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/simple-git/package.json
+20 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/ssh-exec/package.json
+21 info package.json fs@0.0.1-security fs is also the name of a node core module.
+22 info package.json child_process@1.0.2 child_process is also the name of a node core module.
+23 info package.json fs-extended@0.2.1 No license field.
+24 verbose readDependencies loading dependencies from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/package.json
+25 verbose install gitbook-start-heroku-alex-moi is installed as 0.0.1
+26 silly cache add args [ 'gitbook-start-heroku-alex-moi', null ]
+27 verbose cache add spec gitbook-start-heroku-alex-moi
+28 silly cache add parsed spec Result {
+28 silly cache add   raw: 'gitbook-start-heroku-alex-moi',
+28 silly cache add   scope: null,
+28 silly cache add   name: 'gitbook-start-heroku-alex-moi',
+28 silly cache add   rawSpec: '',
+28 silly cache add   spec: 'latest',
+28 silly cache add   type: 'tag' }
+29 silly addNamed gitbook-start-heroku-alex-moi@latest
+30 verbose addNamed "latest" is being treated as a dist-tag for gitbook-start-heroku-alex-moi
+31 info addNameTag [ 'gitbook-start-heroku-alex-moi', 'latest' ]
+32 silly mapToRegistry name gitbook-start-heroku-alex-moi
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry data Result {
+35 silly mapToRegistry   raw: 'gitbook-start-heroku-alex-moi',
+35 silly mapToRegistry   scope: null,
+35 silly mapToRegistry   name: 'gitbook-start-heroku-alex-moi',
+35 silly mapToRegistry   rawSpec: '',
+35 silly mapToRegistry   spec: 'latest',
+35 silly mapToRegistry   type: 'tag' }
+36 silly mapToRegistry uri https://registry.npmjs.org/gitbook-start-heroku-alex-moi
+37 verbose addNameTag registry:https://registry.npmjs.org/gitbook-start-heroku-alex-moi not in flight; fetching
+38 verbose request uri https://registry.npmjs.org/gitbook-start-heroku-alex-moi
+39 verbose request no auth needed
+40 info attempt registry request try #1 at 6:54:54 PM
+41 verbose request using bearer token for auth
+42 verbose request id 7b6b0ad17f046a05
+43 verbose etag "CBWV11UTOCVG2T1WEJUQSH64K"
+44 http request GET https://registry.npmjs.org/gitbook-start-heroku-alex-moi
+45 http 304 https://registry.npmjs.org/gitbook-start-heroku-alex-moi
+46 verbose headers { 'cache-control': 'max-age=300',
+46 verbose headers   'accept-ranges': 'bytes',
+46 verbose headers   date: 'Fri, 28 Oct 2016 18:54:54 GMT',
+46 verbose headers   via: '1.1 varnish',
+46 verbose headers   connection: 'keep-alive',
+46 verbose headers   'x-served-by': 'cache-lcy1151-LCY',
+46 verbose headers   'x-cache': 'MISS',
+46 verbose headers   'x-cache-hits': '0',
+46 verbose headers   'x-timer': 'S1477680894.343181,VS0,VE343',
+46 verbose headers   vary: 'Accept-Encoding' }
+47 silly get cb [ 304,
+47 silly get   { 'cache-control': 'max-age=300',
+47 silly get     'accept-ranges': 'bytes',
+47 silly get     date: 'Fri, 28 Oct 2016 18:54:54 GMT',
+47 silly get     via: '1.1 varnish',
+47 silly get     connection: 'keep-alive',
+47 silly get     'x-served-by': 'cache-lcy1151-LCY',
+47 silly get     'x-cache': 'MISS',
+47 silly get     'x-cache-hits': '0',
+47 silly get     'x-timer': 'S1477680894.343181,VS0,VE343',
+47 silly get     vary: 'Accept-Encoding' } ]
+48 verbose etag https://registry.npmjs.org/gitbook-start-heroku-alex-moi from cache
+49 verbose get saving gitbook-start-heroku-alex-moi to /home/ubuntu/.npm/registry.npmjs.org/gitbook-start-heroku-alex-moi/.cache.json
+50 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+51 silly addNameTag next cb for gitbook-start-heroku-alex-moi with tag latest
+52 silly addNamed gitbook-start-heroku-alex-moi@0.0.1
+53 verbose addNamed "0.0.1" is a plain semver version for gitbook-start-heroku-alex-moi
+54 silly cache afterAdd gitbook-start-heroku-alex-moi@0.0.1
+55 verbose afterAdd /home/ubuntu/.npm/gitbook-start-heroku-alex-moi/0.0.1/package/package.json not in flight; writing
+56 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+57 verbose afterAdd /home/ubuntu/.npm/gitbook-start-heroku-alex-moi/0.0.1/package/package.json written
+58 silly install resolved [ { name: 'gitbook-start-heroku-alex-moi',
+58 silly install resolved     version: '0.0.1',
+58 silly install resolved     description: 'Plugin deploy heroku',
+58 silly install resolved     main: 'gitbook-start-heroku.js',
+58 silly install resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+58 silly install resolved     repository:
+58 silly install resolved      { type: 'git',
+58 silly install resolved        url: 'git+https://github.com/ULL-ESIT-SYTW-1617/gitbook-start-heroku-alex-moi.git',
+58 silly install resolved        wiki: 'https://github.com/ULL-ESIT-SYTW-1617/gitbook-start-heroku-alex-moi.wiki.git' },
+58 silly install resolved     keywords: [ 'gitbook', 'npm package' ],
+58 silly install resolved     author:
+58 silly install resolved      { name: 'Moises Yanes Carballo',
+58 silly install resolved        email: 'alu0100782851@ull.edu.es',
+58 silly install resolved        url: 'http://alu0100782851.github.io/' },
+58 silly install resolved     contributors: [ [Object] ],
+58 silly install resolved     license: 'ISC',
+58 silly install resolved     bugs: { url: 'https://github.com/ULL-ESIT-SYTW-1617/gitbook-start-heroku-alex-moi.git/issues' },
+58 silly install resolved     bin: { 'gitbook-start-heroku': './gitbook-start-heroku.js' },
+58 silly install resolved     homepage: 'https://github.com/ULL-ESIT-SYTW-1617/gitbook-start-heroku-alex-moi.git#readme',
+58 silly install resolved     dependencies:
+58 silly install resolved      { ejs: '^2.5.2',
+58 silly install resolved        fs: '0.0.1-security',
+58 silly install resolved        'fs-extended': '^0.2.1',
+58 silly install resolved        'fs-extra': '^0.30.0',
+58 silly install resolved        'gh-pages': '^0.11.0',
+58 silly install resolved        'gitbook-cli': '^2.3.0',
+58 silly install resolved        gulp: '^3.9.1',
+58 silly install resolved        'gulp-shell': '^0.5.2',
+58 silly install resolved        minimist: '^1.2.0',
+58 silly install resolved        'simple-git': '^1.51.0',
+58 silly install resolved        path: '^0.12.7',
+58 silly install resolved        'git-url-parse': '^6.0.7' },
+58 silly install resolved     devDependencies:
+58 silly install resolved      { 'child-process': '^1.0.2',
+58 silly install resolved        child_process: '^1.0.2',
+58 silly install resolved        'gitbook-cli': '^2.3.0',
+58 silly install resolved        'gulp-shell': '^0.5.2',
+58 silly install resolved        'ssh-exec': '^2.0.0' },
+58 silly install resolved     readme: '\n# Sistemas y Tecnologías Web. Gitbook Start iaas.ull.es. Plugins\n\nEste paquete es un plugin del paquete ```gitbook-start-alex-moi-nitesh```.\nOfrece la posibilidad de desplegar en la máquina **iaas.ull.es** nuestra aplicación.\n\n##Instalación\nEste paquete se instala con el siguiente comando:\n```npm install -g gitbook-start-iaas-ull-es-alex-moi```\n\n##Descripción del paquete\nEl paquete cuenta con dos métodos, **intialize()** y **deploy()**. El primero, al ser invocado por el paquete principal [gitbook-start-alex-moi-nitesh](https://www.npmjs.com/package/gitbook-start-alex-moi-nitesh) añadirá una tarea gulp al gulpfile.js de la aplicación. Esta tarea se llamará **deploy-iaas** e invocará el método **deploy()** que se encargará de desplegar la aplicación en la **máquina iaas**. \n\n### SSH  keys\nPara conectarnos a la máquina del iaas, tenenmos que tener configurado la [vpn de la ULL](http://www.ull.es/stic/tag/vpn/), y poder configurar un alias para conectarnos más rápidamente por **ssh**.\nPara ello crearemos en `~/.ssh` un fichero `config` con el siguiente contenido:\n```\nHost sytw\n\tHostName dir_ip_máquina\n\tUser usuario\n```\nCon esto podremos conectarnos sin ningún problema a la máquina.\nTambién es necesario tener generado en la máquina del iaas las claves para utilizar repositorios Github. Puede encontrar la documentación apropiada [en este link](https://help.github.com/articles/generating-an-ssh-key/).\n\n##Funcionamiento\nUna vez haya seguido la documentación en [gitbook-start-alex-moi-nitesh](https://github.com/ULL-ESIT-SYTW-1617/nueva-funcionalidad-para-el-paquete-npm-plugins-alex-moi) simplemente debe ejecutar lo siguiente:\n`gulp deploy-iaas`\nCon ello desplegaremos por primera vez el repositorio git especificado.\nSi que queremos actualizar la máquin, también deberemos ejecutar esa tarea.\n\n## Enlaces importantes\n*  [Página en NPM gitbook-start-iaas-ull-es-alex-moi Plugin](https://www.npmjs.com/package/gitbook-start-iaas-ull-es-alex-moi)\n*  [Página en NPM gitbook-start-alex-moi-nitesh](https://www.npmjs.com/package/gitbook-start-alex-moi-nitesh)\n*  [Repositorio GitHub](https://github.com/ULL-ESIT-SYTW-1617/gitbook-start-iaas-ull-es-alex-moi)\n*  [Descripción de la práctica](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicaplugin.html)\n*  [Campus Virtual](https://campusvirtual.ull.es/1617/course/view.php?id=1175)\n\n## Autores\n\n* Alexander Cole Mora | [Página Personal](http://alu0100767421.github.io/)\n* Moisés Yanes Carballo | [Página Personal](http://alu0100782851.github.io/)\n\n\n\n\n',
+58 silly install resolved     readmeFilename: 'README.md',
+58 silly install resolved     gitHead: '41b3bd2d56014545bf4d479478b413ee2979b436',
+58 silly install resolved     _id: 'gitbook-start-heroku-alex-moi@0.0.1',
+58 silly install resolved     _shasum: 'eee73fea2ee76ceae39b7d8385f71f8067333f2d',
+58 silly install resolved     _from: 'gitbook-start-heroku-alex-moi@latest' } ]
+59 info install gitbook-start-heroku-alex-moi@0.0.1 into /home/ubuntu/workspace/practica-plugins-heroku-alex-moi
+60 info installOne gitbook-start-heroku-alex-moi@0.0.1
+61 verbose installOne of gitbook-start-heroku-alex-moi to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi not in flight; installing
+62 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+63 verbose lock using /home/ubuntu/.npm/_locks/gitbook-start-heroku-ale-75493f89eec463a6.lock for /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi
+64 silly install write writing gitbook-start-heroku-alex-moi 0.0.1 to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi
+65 verbose unbuild node_modules/gitbook-start-heroku-alex-moi
+66 info preuninstall gitbook-start-heroku-alex-moi@0.0.1
+67 info uninstall gitbook-start-heroku-alex-moi@0.0.1
+68 verbose unbuild rmStuff gitbook-start-heroku-alex-moi@0.0.1 from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules
+69 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/.bin/gitbook-start-heroku is being gently removed
+70 silly gentlyRm verifying /home/ubuntu/workspace/practica-plugins-heroku-alex-moi is an npm working directory
+71 silly gentlyRm containing path /home/ubuntu/workspace/practica-plugins-heroku-alex-moi is under npm's control, in /home/ubuntu/workspace/practica-plugins-heroku-alex-moi
+72 silly gentlyRm deletion target /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/.bin/gitbook-start-heroku is under /home/ubuntu/workspace/practica-plugins-heroku-alex-moi
+73 verbose gentlyRm vacuuming from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/.bin/gitbook-start-heroku up to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi
+74 silly vacuum-fs removing /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/.bin/gitbook-start-heroku
+75 silly vacuum-fs quitting because other entries in /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/.bin
+76 info postuninstall gitbook-start-heroku-alex-moi@0.0.1
+77 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi is being purged from base /home/ubuntu/workspace/practica-plugins-heroku-alex-moi
+78 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi
+79 silly vacuum-fs purging /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi
+80 silly vacuum-fs quitting because other entries in /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules
+81 verbose tar unpack /home/ubuntu/.npm/gitbook-start-heroku-alex-moi/0.0.1/package.tgz
+82 verbose tar unpacking to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi
+83 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi is being purged
+84 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi
+85 silly gunzTarPerm modes [ '755', '644' ]
+86 silly gunzTarPerm extractEntry package.json
+87 silly gunzTarPerm extractEntry README.md
+88 silly gunzTarPerm extractEntry gitbook-start-heroku.js
+89 verbose write writing to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/package.json
+90 info preinstall gitbook-start-heroku-alex-moi@0.0.1
+91 verbose readDependencies loading dependencies from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/package.json
+92 silly prepareForInstallMany adding path@^0.12.7 from gitbook-start-heroku-alex-moi dependencies
+93 silly prepareForInstallMany adding git-url-parse@^6.0.7 from gitbook-start-heroku-alex-moi dependencies
+94 verbose readDependencies loading dependencies from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/package.json
+95 silly cache add args [ 'path@^0.12.7', null ]
+96 verbose cache add spec path@^0.12.7
+97 silly cache add args [ 'git-url-parse@^6.0.7', null ]
+98 verbose cache add spec git-url-parse@^6.0.7
+99 silly cache add parsed spec Result {
+99 silly cache add   raw: 'path@^0.12.7',
+99 silly cache add   scope: null,
+99 silly cache add   name: 'path',
+99 silly cache add   rawSpec: '^0.12.7',
+99 silly cache add   spec: '>=0.12.7 <0.13.0',
+99 silly cache add   type: 'range' }
+100 silly addNamed path@>=0.12.7 <0.13.0
+101 verbose addNamed ">=0.12.7 <0.13.0" is a valid semver range for path
+102 silly addNameRange { name: 'path', range: '>=0.12.7 <0.13.0', hasData: false }
+103 silly mapToRegistry name path
+104 silly mapToRegistry using default registry
+105 silly mapToRegistry registry https://registry.npmjs.org/
+106 silly mapToRegistry data Result {
+106 silly mapToRegistry   raw: 'path',
+106 silly mapToRegistry   scope: null,
+106 silly mapToRegistry   name: 'path',
+106 silly mapToRegistry   rawSpec: '',
+106 silly mapToRegistry   spec: 'latest',
+106 silly mapToRegistry   type: 'tag' }
+107 silly mapToRegistry uri https://registry.npmjs.org/path
+108 verbose addNameRange registry:https://registry.npmjs.org/path not in flight; fetching
+109 silly cache add parsed spec Result {
+109 silly cache add   raw: 'git-url-parse@^6.0.7',
+109 silly cache add   scope: null,
+109 silly cache add   name: 'git-url-parse',
+109 silly cache add   rawSpec: '^6.0.7',
+109 silly cache add   spec: '>=6.0.7 <7.0.0',
+109 silly cache add   type: 'range' }
+110 silly addNamed git-url-parse@>=6.0.7 <7.0.0
+111 verbose addNamed ">=6.0.7 <7.0.0" is a valid semver range for git-url-parse
+112 silly addNameRange { name: 'git-url-parse',
+112 silly addNameRange   range: '>=6.0.7 <7.0.0',
+112 silly addNameRange   hasData: false }
+113 silly mapToRegistry name git-url-parse
+114 silly mapToRegistry using default registry
+115 silly mapToRegistry registry https://registry.npmjs.org/
+116 silly mapToRegistry data Result {
+116 silly mapToRegistry   raw: 'git-url-parse',
+116 silly mapToRegistry   scope: null,
+116 silly mapToRegistry   name: 'git-url-parse',
+116 silly mapToRegistry   rawSpec: '',
+116 silly mapToRegistry   spec: 'latest',
+116 silly mapToRegistry   type: 'tag' }
+117 silly mapToRegistry uri https://registry.npmjs.org/git-url-parse
+118 verbose addNameRange registry:https://registry.npmjs.org/git-url-parse not in flight; fetching
+119 verbose request uri https://registry.npmjs.org/path
+120 verbose request no auth needed
+121 info attempt registry request try #1 at 6:54:55 PM
+122 verbose request using bearer token for auth
+123 verbose etag "21FYDJQ4J83TC6ADEI6BRIFQF"
+124 http request GET https://registry.npmjs.org/path
+125 verbose request uri https://registry.npmjs.org/git-url-parse
+126 verbose request no auth needed
+127 info attempt registry request try #1 at 6:54:55 PM
+128 verbose request using bearer token for auth
+129 verbose etag "88DF3GXIT8ECCRNU6BVLCKHEV"
+130 http request GET https://registry.npmjs.org/git-url-parse
+131 http 304 https://registry.npmjs.org/git-url-parse
+132 verbose headers { 'cache-control': 'max-age=300',
+132 verbose headers   'accept-ranges': 'bytes',
+132 verbose headers   date: 'Fri, 28 Oct 2016 18:54:55 GMT',
+132 verbose headers   via: '1.1 varnish',
+132 verbose headers   connection: 'keep-alive',
+132 verbose headers   'x-served-by': 'cache-lcy1128-LCY',
+132 verbose headers   'x-cache': 'MISS',
+132 verbose headers   'x-cache-hits': '0',
+132 verbose headers   'x-timer': 'S1477680895.072587,VS0,VE344',
+132 verbose headers   vary: 'Accept-Encoding' }
+133 silly get cb [ 304,
+133 silly get   { 'cache-control': 'max-age=300',
+133 silly get     'accept-ranges': 'bytes',
+133 silly get     date: 'Fri, 28 Oct 2016 18:54:55 GMT',
+133 silly get     via: '1.1 varnish',
+133 silly get     connection: 'keep-alive',
+133 silly get     'x-served-by': 'cache-lcy1128-LCY',
+133 silly get     'x-cache': 'MISS',
+133 silly get     'x-cache-hits': '0',
+133 silly get     'x-timer': 'S1477680895.072587,VS0,VE344',
+133 silly get     vary: 'Accept-Encoding' } ]
+134 verbose etag https://registry.npmjs.org/git-url-parse from cache
+135 verbose get saving git-url-parse to /home/ubuntu/.npm/registry.npmjs.org/git-url-parse/.cache.json
+136 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+137 silly addNameRange number 2 { name: 'git-url-parse', range: '>=6.0.7 <7.0.0', hasData: true }
+138 silly addNameRange versions [ 'git-url-parse',
+138 silly addNameRange   [ '2.0.0',
+138 silly addNameRange     '3.0.0',
+138 silly addNameRange     '4.0.0',
+138 silly addNameRange     '4.1.0',
+138 silly addNameRange     '4.2.0',
+138 silly addNameRange     '4.2.1',
+138 silly addNameRange     '5.0.0',
+138 silly addNameRange     '5.0.1',
+138 silly addNameRange     '5.0.1-beta',
+138 silly addNameRange     '6.0.0',
+138 silly addNameRange     '6.0.1',
+138 silly addNameRange     '6.0.2',
+138 silly addNameRange     '6.0.3',
+138 silly addNameRange     '6.0.4',
+138 silly addNameRange     '6.0.5',
+138 silly addNameRange     '6.0.6',
+138 silly addNameRange     '6.0.7' ] ]
+139 silly addNamed git-url-parse@6.0.7
+140 verbose addNamed "6.0.7" is a plain semver version for git-url-parse
+141 silly cache afterAdd git-url-parse@6.0.7
+142 verbose afterAdd /home/ubuntu/.npm/git-url-parse/6.0.7/package/package.json not in flight; writing
+143 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+144 verbose afterAdd /home/ubuntu/.npm/git-url-parse/6.0.7/package/package.json written
+145 http 304 https://registry.npmjs.org/path
+146 verbose headers { 'cache-control': 'max-age=300',
+146 verbose headers   'accept-ranges': 'bytes',
+146 verbose headers   date: 'Fri, 28 Oct 2016 18:54:55 GMT',
+146 verbose headers   via: '1.1 varnish',
+146 verbose headers   connection: 'keep-alive',
+146 verbose headers   'x-served-by': 'cache-lcy1151-LCY',
+146 verbose headers   'x-cache': 'MISS',
+146 verbose headers   'x-cache-hits': '0',
+146 verbose headers   'x-timer': 'S1477680895.058413,VS0,VE711',
+146 verbose headers   vary: 'Accept-Encoding' }
+147 silly get cb [ 304,
+147 silly get   { 'cache-control': 'max-age=300',
+147 silly get     'accept-ranges': 'bytes',
+147 silly get     date: 'Fri, 28 Oct 2016 18:54:55 GMT',
+147 silly get     via: '1.1 varnish',
+147 silly get     connection: 'keep-alive',
+147 silly get     'x-served-by': 'cache-lcy1151-LCY',
+147 silly get     'x-cache': 'MISS',
+147 silly get     'x-cache-hits': '0',
+147 silly get     'x-timer': 'S1477680895.058413,VS0,VE711',
+147 silly get     vary: 'Accept-Encoding' } ]
+148 verbose etag https://registry.npmjs.org/path from cache
+149 verbose get saving path to /home/ubuntu/.npm/registry.npmjs.org/path/.cache.json
+150 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+151 silly addNameRange number 2 { name: 'path', range: '>=0.12.7 <0.13.0', hasData: true }
+152 silly addNameRange versions [ 'path', [ '0.4.9', '0.4.10', '0.11.14', '0.12.7' ] ]
+153 silly addNamed path@0.12.7
+154 verbose addNamed "0.12.7" is a plain semver version for path
+155 silly cache afterAdd path@0.12.7
+156 verbose afterAdd /home/ubuntu/.npm/path/0.12.7/package/package.json not in flight; writing
+157 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+158 verbose afterAdd /home/ubuntu/.npm/path/0.12.7/package/package.json written
+159 silly install resolved [ { name: 'git-url-parse',
+159 silly install resolved     version: '6.0.7',
+159 silly install resolved     description: 'A high level git url parser for common git providers.',
+159 silly install resolved     main: 'lib/index.js',
+159 silly install resolved     scripts: { test: 'node test' },
+159 silly install resolved     repository:
+159 silly install resolved      { type: 'git',
+159 silly install resolved        url: 'git+ssh://git@github.com/IonicaBizau/git-url-parse.git' },
+159 silly install resolved     keywords: [ 'parse', 'git', 'url' ],
+159 silly install resolved     author:
+159 silly install resolved      { name: 'Ionică Bizău',
+159 silly install resolved        email: 'bizauionica@gmail.com',
+159 silly install resolved        url: 'http://ionicabizau.net' },
+159 silly install resolved     license: 'MIT',
+159 silly install resolved     bugs: { url: 'https://github.com/IonicaBizau/git-url-parse/issues' },
+159 silly install resolved     homepage: 'https://github.com/IonicaBizau/git-url-parse',
+159 silly install resolved     blah: { h_img: 'http://i.imgur.com/HlfMsVf.png' },
+159 silly install resolved     directories: { example: 'example', test: 'test' },
+159 silly install resolved     dependencies: { 'git-up': '^2.0.0' },
+159 silly install resolved     devDependencies:
+159 silly install resolved      { browserify: '^13.0.1',
+159 silly install resolved        'dist-it': '^2.0.0',
+159 silly install resolved        namy: '^1.2.3',
+159 silly install resolved        tester: '^1.3.1' },
+159 silly install resolved     files:
+159 silly install resolved      [ 'bin/',
+159 silly install resolved        'app/',
+159 silly install resolved        'lib/',
+159 silly install resolved        'build/',
+159 silly install resolved        'dist/',
+159 silly install resolved        'src/',
+159 silly install resolved        'resources/',
+159 silly install resolved        'menu/',
+159 silly install resolved        'scripts/',
+159 silly install resolved        'cli.js',
+159 silly install resolved        'index.js' ],
+159 silly install resolved     gitHead: '92d17640c986621fc05ce6e4e1295091b44ebc70',
+159 silly install resolved     _id: 'git-url-parse@6.0.7',
+159 silly install resolved     _shasum: 'e61dbb05ccd78921494814f5e5f0cea17275d3de',
+159 silly install resolved     _from: 'git-url-parse@>=6.0.7 <7.0.0',
+159 silly install resolved     _npmVersion: '2.14.2',
+159 silly install resolved     _nodeVersion: '4.0.0',
+159 silly install resolved     _npmUser: { name: 'ionicabizau', email: 'bizauionica@gmail.com' },
+159 silly install resolved     maintainers: [ [Object] ],
+159 silly install resolved     dist:
+159 silly install resolved      { shasum: 'e61dbb05ccd78921494814f5e5f0cea17275d3de',
+159 silly install resolved        tarball: 'https://registry.npmjs.org/git-url-parse/-/git-url-parse-6.0.7.tgz' },
+159 silly install resolved     _npmOperationalInternal:
+159 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+159 silly install resolved        tmp: 'tmp/git-url-parse-6.0.7.tgz_1476192908173_0.08698619529604912' },
+159 silly install resolved     _resolved: 'https://registry.npmjs.org/git-url-parse/-/git-url-parse-6.0.7.tgz',
+159 silly install resolved     readme: 'ERROR: No README data found!' },
+159 silly install resolved   { author: { name: 'Joyent', url: 'http://www.joyent.com' },
+159 silly install resolved     name: 'path',
+159 silly install resolved     description: 'Node.JS path module',
+159 silly install resolved     keywords: [ 'ender', 'path' ],
+159 silly install resolved     license: 'MIT',
+159 silly install resolved     version: '0.12.7',
+159 silly install resolved     homepage: 'http://nodejs.org/docs/latest/api/path.html',
+159 silly install resolved     repository: { type: 'git', url: 'git://github.com/jinder/path.git' },
+159 silly install resolved     main: './path.js',
+159 silly install resolved     dependencies: { process: '^0.11.1', util: '^0.10.3' },
+159 silly install resolved     gitHead: '7fbaede3ca9d224494cbdd47d7ca803ee96d2055',
+159 silly install resolved     bugs: { url: 'https://github.com/jinder/path/issues' },
+159 silly install resolved     _id: 'path@0.12.7',
+159 silly install resolved     scripts: {},
+159 silly install resolved     _shasum: 'd4dc2a506c4ce2197eb481ebfcd5b36c0140b10f',
+159 silly install resolved     _from: 'path@>=0.12.7 <0.13.0',
+159 silly install resolved     _npmVersion: '2.11.3',
+159 silly install resolved     _nodeVersion: '0.12.7',
+159 silly install resolved     _npmUser: { name: 'jinder', email: 'jindersidhu@gmail.com' },
+159 silly install resolved     dist:
+159 silly install resolved      { shasum: 'd4dc2a506c4ce2197eb481ebfcd5b36c0140b10f',
+159 silly install resolved        tarball: 'https://registry.npmjs.org/path/-/path-0.12.7.tgz' },
+159 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+159 silly install resolved     directories: {},
+159 silly install resolved     _resolved: 'https://registry.npmjs.org/path/-/path-0.12.7.tgz',
+159 silly install resolved     readme: 'ERROR: No README data found!' } ]
+160 info install git-url-parse@6.0.7 into /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi
+161 info install path@0.12.7 into /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi
+162 info installOne git-url-parse@6.0.7
+163 verbose installOne of git-url-parse to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi not in flight; installing
+164 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+165 info installOne path@0.12.7
+166 verbose installOne of path to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi not in flight; installing
+167 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+168 verbose lock using /home/ubuntu/.npm/_locks/git-url-parse-1c968b97ade1b635.lock for /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse
+169 verbose lock using /home/ubuntu/.npm/_locks/path-7e6dc023684a3ad7.lock for /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path
+170 silly install write writing git-url-parse 6.0.7 to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse
+171 silly install write writing path 0.12.7 to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path
+172 verbose unbuild node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse
+173 verbose unbuild node_modules/gitbook-start-heroku-alex-moi/node_modules/path
+174 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse is being purged from base /home/ubuntu/workspace/practica-plugins-heroku-alex-moi
+175 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse
+176 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path is being purged from base /home/ubuntu/workspace/practica-plugins-heroku-alex-moi
+177 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path
+178 verbose tar unpack /home/ubuntu/.npm/git-url-parse/6.0.7/package.tgz
+179 verbose tar unpacking to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse
+180 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse is being purged
+181 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse
+182 verbose tar unpack /home/ubuntu/.npm/path/0.12.7/package.tgz
+183 verbose tar unpacking to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path
+184 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path is being purged
+185 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path
+186 silly gunzTarPerm modes [ '755', '644' ]
+187 silly gunzTarPerm modes [ '755', '644' ]
+188 silly gunzTarPerm extractEntry package.json
+189 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+190 silly gunzTarPerm extractEntry package.json
+191 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+192 silly gunzTarPerm extractEntry README.md
+193 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+194 silly gunzTarPerm extractEntry LICENSE
+195 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+196 silly gunzTarPerm extractEntry .npmignore
+197 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+198 silly gunzTarPerm extractEntry README.md
+199 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+200 silly gunzTarPerm extractEntry lib/index.js
+201 silly gunzTarPerm modified mode [ 'lib/index.js', 436, 420 ]
+202 silly gunzTarPerm extractEntry LICENSE
+203 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+204 silly gunzTarPerm extractEntry path.js
+205 silly gunzTarPerm modified mode [ 'path.js', 438, 420 ]
+206 verbose write writing to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/package.json
+207 info preinstall git-url-parse@6.0.7
+208 verbose write writing to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/package.json
+209 verbose readDependencies loading dependencies from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/package.json
+210 info preinstall path@0.12.7
+211 verbose readDependencies loading dependencies from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/package.json
+212 silly prepareForInstallMany adding git-up@^2.0.0 from git-url-parse dependencies
+213 verbose readDependencies loading dependencies from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/package.json
+214 silly prepareForInstallMany adding process@^0.11.1 from path dependencies
+215 silly prepareForInstallMany adding util@^0.10.3 from path dependencies
+216 verbose readDependencies loading dependencies from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/package.json
+217 silly cache add args [ 'git-up@^2.0.0', null ]
+218 verbose cache add spec git-up@^2.0.0
+219 silly cache add parsed spec Result {
+219 silly cache add   raw: 'git-up@^2.0.0',
+219 silly cache add   scope: null,
+219 silly cache add   name: 'git-up',
+219 silly cache add   rawSpec: '^2.0.0',
+219 silly cache add   spec: '>=2.0.0 <3.0.0',
+219 silly cache add   type: 'range' }
+220 silly addNamed git-up@>=2.0.0 <3.0.0
+221 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for git-up
+222 silly addNameRange { name: 'git-up', range: '>=2.0.0 <3.0.0', hasData: false }
+223 silly mapToRegistry name git-up
+224 silly mapToRegistry using default registry
+225 silly mapToRegistry registry https://registry.npmjs.org/
+226 silly mapToRegistry data Result {
+226 silly mapToRegistry   raw: 'git-up',
+226 silly mapToRegistry   scope: null,
+226 silly mapToRegistry   name: 'git-up',
+226 silly mapToRegistry   rawSpec: '',
+226 silly mapToRegistry   spec: 'latest',
+226 silly mapToRegistry   type: 'tag' }
+227 silly mapToRegistry uri https://registry.npmjs.org/git-up
+228 verbose addNameRange registry:https://registry.npmjs.org/git-up not in flight; fetching
+229 verbose request uri https://registry.npmjs.org/git-up
+230 verbose request no auth needed
+231 info attempt registry request try #1 at 6:54:55 PM
+232 verbose request using bearer token for auth
+233 verbose etag "H4JGO6VCY9MUG18CXVZ5VYDM"
+234 http request GET https://registry.npmjs.org/git-up
+235 silly cache add args [ 'process@^0.11.1', null ]
+236 verbose cache add spec process@^0.11.1
+237 silly cache add args [ 'util@^0.10.3', null ]
+238 verbose cache add spec util@^0.10.3
+239 silly cache add parsed spec Result {
+239 silly cache add   raw: 'process@^0.11.1',
+239 silly cache add   scope: null,
+239 silly cache add   name: 'process',
+239 silly cache add   rawSpec: '^0.11.1',
+239 silly cache add   spec: '>=0.11.1 <0.12.0',
+239 silly cache add   type: 'range' }
+240 silly addNamed process@>=0.11.1 <0.12.0
+241 verbose addNamed ">=0.11.1 <0.12.0" is a valid semver range for process
+242 silly addNameRange { name: 'process', range: '>=0.11.1 <0.12.0', hasData: false }
+243 silly mapToRegistry name process
+244 silly mapToRegistry using default registry
+245 silly mapToRegistry registry https://registry.npmjs.org/
+246 silly mapToRegistry data Result {
+246 silly mapToRegistry   raw: 'process',
+246 silly mapToRegistry   scope: null,
+246 silly mapToRegistry   name: 'process',
+246 silly mapToRegistry   rawSpec: '',
+246 silly mapToRegistry   spec: 'latest',
+246 silly mapToRegistry   type: 'tag' }
+247 silly mapToRegistry uri https://registry.npmjs.org/process
+248 verbose addNameRange registry:https://registry.npmjs.org/process not in flight; fetching
+249 silly cache add parsed spec Result {
+249 silly cache add   raw: 'util@^0.10.3',
+249 silly cache add   scope: null,
+249 silly cache add   name: 'util',
+249 silly cache add   rawSpec: '^0.10.3',
+249 silly cache add   spec: '>=0.10.3 <0.11.0',
+249 silly cache add   type: 'range' }
+250 silly addNamed util@>=0.10.3 <0.11.0
+251 verbose addNamed ">=0.10.3 <0.11.0" is a valid semver range for util
+252 silly addNameRange { name: 'util', range: '>=0.10.3 <0.11.0', hasData: false }
+253 silly mapToRegistry name util
+254 silly mapToRegistry using default registry
+255 silly mapToRegistry registry https://registry.npmjs.org/
+256 silly mapToRegistry data Result {
+256 silly mapToRegistry   raw: 'util',
+256 silly mapToRegistry   scope: null,
+256 silly mapToRegistry   name: 'util',
+256 silly mapToRegistry   rawSpec: '',
+256 silly mapToRegistry   spec: 'latest',
+256 silly mapToRegistry   type: 'tag' }
+257 silly mapToRegistry uri https://registry.npmjs.org/util
+258 verbose addNameRange registry:https://registry.npmjs.org/util not in flight; fetching
+259 verbose request uri https://registry.npmjs.org/util
+260 verbose request no auth needed
+261 info attempt registry request try #1 at 6:54:55 PM
+262 verbose request using bearer token for auth
+263 verbose etag "DD9HTJ0VVV6C5AEF6SH6L35OP"
+264 http request GET https://registry.npmjs.org/util
+265 verbose request uri https://registry.npmjs.org/process
+266 verbose request no auth needed
+267 info attempt registry request try #1 at 6:54:55 PM
+268 verbose request using bearer token for auth
+269 verbose etag "71CV28LZOVHQKLHNIQI0MDX17"
+270 http request GET https://registry.npmjs.org/process
+271 http 304 https://registry.npmjs.org/process
+272 verbose headers { 'cache-control': 'max-age=300',
+272 verbose headers   'accept-ranges': 'bytes',
+272 verbose headers   date: 'Fri, 28 Oct 2016 18:54:55 GMT',
+272 verbose headers   via: '1.1 varnish',
+272 verbose headers   connection: 'keep-alive',
+272 verbose headers   'x-served-by': 'cache-lcy1126-LCY',
+272 verbose headers   'x-cache': 'MISS',
+272 verbose headers   'x-cache-hits': '0',
+272 verbose headers   'x-timer': 'S1477680895.860331,VS0,VE90',
+272 verbose headers   vary: 'Accept-Encoding' }
+273 silly get cb [ 304,
+273 silly get   { 'cache-control': 'max-age=300',
+273 silly get     'accept-ranges': 'bytes',
+273 silly get     date: 'Fri, 28 Oct 2016 18:54:55 GMT',
+273 silly get     via: '1.1 varnish',
+273 silly get     connection: 'keep-alive',
+273 silly get     'x-served-by': 'cache-lcy1126-LCY',
+273 silly get     'x-cache': 'MISS',
+273 silly get     'x-cache-hits': '0',
+273 silly get     'x-timer': 'S1477680895.860331,VS0,VE90',
+273 silly get     vary: 'Accept-Encoding' } ]
+274 verbose etag https://registry.npmjs.org/process from cache
+275 verbose get saving process to /home/ubuntu/.npm/registry.npmjs.org/process/.cache.json
+276 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+277 silly addNameRange number 2 { name: 'process', range: '>=0.11.1 <0.12.0', hasData: true }
+278 silly addNameRange versions [ 'process',
+278 silly addNameRange   [ '0.4.9',
+278 silly addNameRange     '0.5.0',
+278 silly addNameRange     '0.5.1',
+278 silly addNameRange     '0.5.2',
+278 silly addNameRange     '0.6.0',
+278 silly addNameRange     '0.7.0',
+278 silly addNameRange     '0.8.0',
+278 silly addNameRange     '0.9.0',
+278 silly addNameRange     '0.10.0',
+278 silly addNameRange     '0.10.1',
+278 silly addNameRange     '0.11.0',
+278 silly addNameRange     '0.11.1',
+278 silly addNameRange     '0.11.2',
+278 silly addNameRange     '0.11.3',
+278 silly addNameRange     '0.11.4',
+278 silly addNameRange     '0.11.5',
+278 silly addNameRange     '0.11.6',
+278 silly addNameRange     '0.11.7',
+278 silly addNameRange     '0.11.8',
+278 silly addNameRange     '0.11.9' ] ]
+279 silly addNamed process@0.11.9
+280 verbose addNamed "0.11.9" is a plain semver version for process
+281 silly cache afterAdd process@0.11.9
+282 verbose afterAdd /home/ubuntu/.npm/process/0.11.9/package/package.json not in flight; writing
+283 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+284 verbose afterAdd /home/ubuntu/.npm/process/0.11.9/package/package.json written
+285 http 304 https://registry.npmjs.org/util
+286 verbose headers { 'cache-control': 'max-age=300',
+286 verbose headers   'accept-ranges': 'bytes',
+286 verbose headers   date: 'Fri, 28 Oct 2016 18:54:56 GMT',
+286 verbose headers   via: '1.1 varnish',
+286 verbose headers   connection: 'keep-alive',
+286 verbose headers   'x-served-by': 'cache-lcy1151-LCY',
+286 verbose headers   'x-cache': 'MISS',
+286 verbose headers   'x-cache-hits': '0',
+286 verbose headers   'x-timer': 'S1477680895.846620,VS0,VE363',
+286 verbose headers   vary: 'Accept-Encoding' }
+287 silly get cb [ 304,
+287 silly get   { 'cache-control': 'max-age=300',
+287 silly get     'accept-ranges': 'bytes',
+287 silly get     date: 'Fri, 28 Oct 2016 18:54:56 GMT',
+287 silly get     via: '1.1 varnish',
+287 silly get     connection: 'keep-alive',
+287 silly get     'x-served-by': 'cache-lcy1151-LCY',
+287 silly get     'x-cache': 'MISS',
+287 silly get     'x-cache-hits': '0',
+287 silly get     'x-timer': 'S1477680895.846620,VS0,VE363',
+287 silly get     vary: 'Accept-Encoding' } ]
+288 verbose etag https://registry.npmjs.org/util from cache
+289 verbose get saving util to /home/ubuntu/.npm/registry.npmjs.org/util/.cache.json
+290 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+291 silly addNameRange number 2 { name: 'util', range: '>=0.10.3 <0.11.0', hasData: true }
+292 silly addNameRange versions [ 'util', [ '0.4.9', '0.10.0', '0.10.1', '0.10.2', '0.10.3' ] ]
+293 silly addNamed util@0.10.3
+294 verbose addNamed "0.10.3" is a plain semver version for util
+295 silly cache afterAdd util@0.10.3
+296 verbose afterAdd /home/ubuntu/.npm/util/0.10.3/package/package.json not in flight; writing
+297 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+298 verbose afterAdd /home/ubuntu/.npm/util/0.10.3/package/package.json written
+299 silly install resolved [ { author: { name: 'Roman Shtylman', email: 'shtylman@gmail.com' },
+299 silly install resolved     name: 'process',
+299 silly install resolved     description: 'process information for node.js and browsers',
+299 silly install resolved     keywords: [ 'process' ],
+299 silly install resolved     scripts:
+299 silly install resolved      { test: 'mocha test.js',
+299 silly install resolved        browser: 'zuul --no-coverage --ui mocha-bdd --local 8080 -- test.js' },
+299 silly install resolved     version: '0.11.9',
+299 silly install resolved     repository:
+299 silly install resolved      { type: 'git',
+299 silly install resolved        url: 'git://github.com/shtylman/node-process.git' },
+299 silly install resolved     license: 'MIT',
+299 silly install resolved     browser: './browser.js',
+299 silly install resolved     main: './index.js',
+299 silly install resolved     engines: { node: '>= 0.6.0' },
+299 silly install resolved     devDependencies: { mocha: '2.2.1', zuul: '^3.10.3' },
+299 silly install resolved     gitHead: '7d8c3702a8bbc43fa55f4bab74b150aef37001dd',
+299 silly install resolved     bugs: { url: 'https://github.com/shtylman/node-process/issues' },
+299 silly install resolved     _id: 'process@0.11.9',
+299 silly install resolved     _shasum: '7bd5ad21aa6253e7da8682264f1e11d11c0318c1',
+299 silly install resolved     _from: 'process@>=0.11.1 <0.12.0',
+299 silly install resolved     _npmVersion: '3.8.6',
+299 silly install resolved     _nodeVersion: '5.12.0',
+299 silly install resolved     _npmUser: { name: 'cwmma', email: 'calvin.metcalf@gmail.com' },
+299 silly install resolved     dist:
+299 silly install resolved      { shasum: '7bd5ad21aa6253e7da8682264f1e11d11c0318c1',
+299 silly install resolved        tarball: 'https://registry.npmjs.org/process/-/process-0.11.9.tgz' },
+299 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+299 silly install resolved     _npmOperationalInternal:
+299 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+299 silly install resolved        tmp: 'tmp/process-0.11.9.tgz_1472587751718_0.8843140550889075' },
+299 silly install resolved     directories: {},
+299 silly install resolved     _resolved: 'https://registry.npmjs.org/process/-/process-0.11.9.tgz',
+299 silly install resolved     readme: 'ERROR: No README data found!',
+299 silly install resolved     homepage: 'https://github.com/shtylman/node-process#readme' },
+299 silly install resolved   { author: { name: 'Joyent', url: 'http://www.joyent.com' },
+299 silly install resolved     name: 'util',
+299 silly install resolved     description: 'Node.JS util module',
+299 silly install resolved     keywords: [ 'util' ],
+299 silly install resolved     version: '0.10.3',
+299 silly install resolved     homepage: 'https://github.com/defunctzombie/node-util',
+299 silly install resolved     repository:
+299 silly install resolved      { type: 'git',
+299 silly install resolved        url: 'git://github.com/defunctzombie/node-util.git' },
+299 silly install resolved     main: './util.js',
+299 silly install resolved     scripts: { test: 'node test/node/*.js && zuul test/browser/*.js' },
+299 silly install resolved     dependencies: { inherits: '2.0.1' },
+299 silly install resolved     license: 'MIT',
+299 silly install resolved     devDependencies: { zuul: '~1.0.9' },
+299 silly install resolved     browser: { './support/isBuffer.js': './support/isBufferBrowser.js' },
+299 silly install resolved     bugs: { url: 'https://github.com/defunctzombie/node-util/issues' },
+299 silly install resolved     _id: 'util@0.10.3',
+299 silly install resolved     dist:
+299 silly install resolved      { shasum: '7afb1afe50805246489e3db7fe0ed379336ac0f9',
+299 silly install resolved        tarball: 'https://registry.npmjs.org/util/-/util-0.10.3.tgz' },
+299 silly install resolved     _from: 'util@>=0.10.3 <0.11.0',
+299 silly install resolved     _npmVersion: '1.3.24',
+299 silly install resolved     _npmUser: { name: 'shtylman', email: 'shtylman@gmail.com' },
+299 silly install resolved     maintainers: [ [Object] ],
+299 silly install resolved     directories: {},
+299 silly install resolved     _shasum: '7afb1afe50805246489e3db7fe0ed379336ac0f9',
+299 silly install resolved     _resolved: 'https://registry.npmjs.org/util/-/util-0.10.3.tgz',
+299 silly install resolved     readme: 'ERROR: No README data found!' } ]
+300 info install process@0.11.9 into /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path
+301 info install util@0.10.3 into /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path
+302 info installOne process@0.11.9
+303 verbose installOne of process to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path not in flight; installing
+304 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+305 info installOne util@0.10.3
+306 verbose installOne of util to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path not in flight; installing
+307 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+308 verbose lock using /home/ubuntu/.npm/_locks/process-c9b67706e23d3ed9.lock for /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/process
+309 verbose lock using /home/ubuntu/.npm/_locks/util-aa6a3d829fea127b.lock for /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util
+310 silly install write writing process 0.11.9 to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/process
+311 silly install write writing util 0.10.3 to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util
+312 verbose unbuild node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/process
+313 verbose unbuild node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util
+314 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/process is being purged from base /home/ubuntu/workspace/practica-plugins-heroku-alex-moi
+315 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/process
+316 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util is being purged from base /home/ubuntu/workspace/practica-plugins-heroku-alex-moi
+317 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util
+318 verbose tar unpack /home/ubuntu/.npm/process/0.11.9/package.tgz
+319 verbose tar unpacking to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/process
+320 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/process is being purged
+321 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/process
+322 verbose tar unpack /home/ubuntu/.npm/util/0.10.3/package.tgz
+323 verbose tar unpacking to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util
+324 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util is being purged
+325 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util
+326 silly gunzTarPerm modes [ '755', '644' ]
+327 silly gunzTarPerm modes [ '755', '644' ]
+328 silly gunzTarPerm extractEntry package.json
+329 silly gunzTarPerm extractEntry package.json
+330 silly gunzTarPerm extractEntry README.md
+331 silly gunzTarPerm extractEntry LICENSE
+332 silly gunzTarPerm extractEntry .npmignore
+333 silly gunzTarPerm extractEntry README.md
+334 silly gunzTarPerm extractEntry browser.js
+335 silly gunzTarPerm extractEntry index.js
+336 silly gunzTarPerm extractEntry LICENSE
+337 silly gunzTarPerm extractEntry util.js
+338 silly gunzTarPerm extractEntry test.js
+339 silly gunzTarPerm extractEntry .eslintrc
+340 silly gunzTarPerm extractEntry .travis.yml
+341 silly gunzTarPerm extractEntry .zuul.yml
+342 silly gunzTarPerm extractEntry support/isBuffer.js
+343 silly gunzTarPerm extractEntry support/isBufferBrowser.js
+344 silly gunzTarPerm extractEntry test/browser/inspect.js
+345 silly gunzTarPerm extractEntry test/browser/is.js
+346 silly gunzTarPerm extractEntry test/node/debug.js
+347 silly gunzTarPerm extractEntry test/node/format.js
+348 silly gunzTarPerm extractEntry test/node/inspect.js
+349 silly gunzTarPerm extractEntry test/node/log.js
+350 silly gunzTarPerm extractEntry test/node/util.js
+351 verbose write writing to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/process/package.json
+352 info preinstall process@0.11.9
+353 verbose readDependencies loading dependencies from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/process/package.json
+354 verbose readDependencies loading dependencies from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/process/package.json
+355 silly install resolved []
+356 verbose about to build /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/process
+357 info build /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/process
+358 info linkStuff process@0.11.9
+359 silly linkStuff process@0.11.9 has /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules as its parent node_modules
+360 verbose linkBins process@0.11.9
+361 verbose linkMans process@0.11.9
+362 verbose rebuildBundles process@0.11.9
+363 info install process@0.11.9
+364 info postinstall process@0.11.9
+365 verbose unlock done using /home/ubuntu/.npm/_locks/process-c9b67706e23d3ed9.lock for /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/process
+366 verbose write writing to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util/package.json
+367 info preinstall util@0.10.3
+368 verbose readDependencies loading dependencies from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util/package.json
+369 silly prepareForInstallMany adding inherits@2.0.1 from util dependencies
+370 verbose readDependencies loading dependencies from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util/package.json
+371 silly cache add args [ 'inherits@2.0.1', null ]
+372 verbose cache add spec inherits@2.0.1
+373 silly cache add parsed spec Result {
+373 silly cache add   raw: 'inherits@2.0.1',
+373 silly cache add   scope: null,
+373 silly cache add   name: 'inherits',
+373 silly cache add   rawSpec: '2.0.1',
+373 silly cache add   spec: '2.0.1',
+373 silly cache add   type: 'version' }
+374 silly addNamed inherits@2.0.1
+375 verbose addNamed "2.0.1" is a plain semver version for inherits
+376 silly mapToRegistry name inherits
+377 silly mapToRegistry using default registry
+378 silly mapToRegistry registry https://registry.npmjs.org/
+379 silly mapToRegistry data Result {
+379 silly mapToRegistry   raw: 'inherits',
+379 silly mapToRegistry   scope: null,
+379 silly mapToRegistry   name: 'inherits',
+379 silly mapToRegistry   rawSpec: '',
+379 silly mapToRegistry   spec: 'latest',
+379 silly mapToRegistry   type: 'tag' }
+380 silly mapToRegistry uri https://registry.npmjs.org/inherits
+381 verbose addNameVersion registry:https://registry.npmjs.org/inherits not in flight; fetching
+382 verbose request uri https://registry.npmjs.org/inherits
+383 verbose request no auth needed
+384 info attempt registry request try #1 at 6:54:56 PM
+385 verbose request using bearer token for auth
+386 verbose etag "4D1KVDQ4GHML6TIB7FGIIWNZ5"
+387 http request GET https://registry.npmjs.org/inherits
+388 http 304 https://registry.npmjs.org/git-up
+389 verbose headers { 'cache-control': 'max-age=300',
+389 verbose headers   'accept-ranges': 'bytes',
+389 verbose headers   date: 'Fri, 28 Oct 2016 18:54:56 GMT',
+389 verbose headers   via: '1.1 varnish',
+389 verbose headers   connection: 'keep-alive',
+389 verbose headers   'x-served-by': 'cache-lcy1128-LCY',
+389 verbose headers   'x-cache': 'MISS',
+389 verbose headers   'x-cache-hits': '0',
+389 verbose headers   'x-timer': 'S1477680895.830640,VS0,VE718',
+389 verbose headers   vary: 'Accept-Encoding' }
+390 silly get cb [ 304,
+390 silly get   { 'cache-control': 'max-age=300',
+390 silly get     'accept-ranges': 'bytes',
+390 silly get     date: 'Fri, 28 Oct 2016 18:54:56 GMT',
+390 silly get     via: '1.1 varnish',
+390 silly get     connection: 'keep-alive',
+390 silly get     'x-served-by': 'cache-lcy1128-LCY',
+390 silly get     'x-cache': 'MISS',
+390 silly get     'x-cache-hits': '0',
+390 silly get     'x-timer': 'S1477680895.830640,VS0,VE718',
+390 silly get     vary: 'Accept-Encoding' } ]
+391 verbose etag https://registry.npmjs.org/git-up from cache
+392 verbose get saving git-up to /home/ubuntu/.npm/registry.npmjs.org/git-up/.cache.json
+393 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+394 silly addNameRange number 2 { name: 'git-up', range: '>=2.0.0 <3.0.0', hasData: true }
+395 silly addNameRange versions [ 'git-up',
+395 silly addNameRange   [ '1.0.0',
+395 silly addNameRange     '1.1.0',
+395 silly addNameRange     '1.2.0',
+395 silly addNameRange     '1.2.1',
+395 silly addNameRange     '2.0.0',
+395 silly addNameRange     '2.0.1',
+395 silly addNameRange     '2.0.2',
+395 silly addNameRange     '2.0.3',
+395 silly addNameRange     '2.0.4',
+395 silly addNameRange     '2.0.5',
+395 silly addNameRange     '2.0.6' ] ]
+396 silly addNamed git-up@2.0.6
+397 verbose addNamed "2.0.6" is a plain semver version for git-up
+398 silly cache afterAdd git-up@2.0.6
+399 verbose afterAdd /home/ubuntu/.npm/git-up/2.0.6/package/package.json not in flight; writing
+400 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+401 verbose afterAdd /home/ubuntu/.npm/git-up/2.0.6/package/package.json written
+402 silly install resolved [ { name: 'git-up',
+402 silly install resolved     version: '2.0.6',
+402 silly install resolved     description: 'A low level git url parser.',
+402 silly install resolved     main: 'lib/index.js',
+402 silly install resolved     directories: { example: 'example', test: 'test' },
+402 silly install resolved     scripts: { test: 'node test' },
+402 silly install resolved     repository:
+402 silly install resolved      { type: 'git',
+402 silly install resolved        url: 'git+https://github.com/IonicaBizau/git-up.git' },
+402 silly install resolved     keywords: [ 'git', 'url', 'parser', 'parsing' ],
+402 silly install resolved     author:
+402 silly install resolved      { name: 'Ionică Bizău',
+402 silly install resolved        email: 'bizauionica@gmail.com',
+402 silly install resolved        url: 'http://ionicabizau.net' },
+402 silly install resolved     license: 'MIT',
+402 silly install resolved     bugs: { url: 'https://github.com/IonicaBizau/git-up/issues' },
+402 silly install resolved     homepage: 'https://github.com/IonicaBizau/git-up',
+402 silly install resolved     dependencies: { 'is-ssh': '^1.3.0', 'parse-url': '^1.3.0' },
+402 silly install resolved     devDependencies: { mocha: '^2.2.5' },
+402 silly install resolved     files:
+402 silly install resolved      [ 'bin/',
+402 silly install resolved        'app/',
+402 silly install resolved        'lib/',
+402 silly install resolved        'build/',
+402 silly install resolved        'dist/',
+402 silly install resolved        'src/',
+402 silly install resolved        'resources/',
+402 silly install resolved        'menu/',
+402 silly install resolved        'scripts/',
+402 silly install resolved        'cli.js',
+402 silly install resolved        'index.js' ],
+402 silly install resolved     blah: {},
+402 silly install resolved     gitHead: 'c86e974d547327ef62f8479d1600de4a59e51dc8',
+402 silly install resolved     _id: 'git-up@2.0.6',
+402 silly install resolved     _shasum: '38d6dddc5db720de83ef09ef3865e748f5887e12',
+402 silly install resolved     _from: 'git-up@>=2.0.0 <3.0.0',
+402 silly install resolved     _npmVersion: '2.14.2',
+402 silly install resolved     _nodeVersion: '4.0.0',
+402 silly install resolved     _npmUser: { name: 'ionicabizau', email: 'bizauionica@gmail.com' },
+402 silly install resolved     maintainers: [ [Object] ],
+402 silly install resolved     dist:
+402 silly install resolved      { shasum: '38d6dddc5db720de83ef09ef3865e748f5887e12',
+402 silly install resolved        tarball: 'https://registry.npmjs.org/git-up/-/git-up-2.0.6.tgz' },
+402 silly install resolved     _npmOperationalInternal:
+402 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+402 silly install resolved        tmp: 'tmp/git-up-2.0.6.tgz_1476192875309_0.6500417322386056' },
+402 silly install resolved     _resolved: 'https://registry.npmjs.org/git-up/-/git-up-2.0.6.tgz',
+402 silly install resolved     readme: 'ERROR: No README data found!' } ]
+403 info install git-up@2.0.6 into /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse
+404 info installOne git-up@2.0.6
+405 verbose installOne of git-up to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse not in flight; installing
+406 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+407 verbose lock using /home/ubuntu/.npm/_locks/git-up-514d446ad0eaf415.lock for /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up
+408 silly install write writing git-up 2.0.6 to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up
+409 verbose unbuild node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up
+410 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up is being purged from base /home/ubuntu/workspace/practica-plugins-heroku-alex-moi
+411 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up
+412 verbose tar unpack /home/ubuntu/.npm/git-up/2.0.6/package.tgz
+413 verbose tar unpacking to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up
+414 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up is being purged
+415 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up
+416 silly gunzTarPerm modes [ '755', '644' ]
+417 silly gunzTarPerm extractEntry package.json
+418 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+419 silly gunzTarPerm extractEntry README.md
+420 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+421 silly gunzTarPerm extractEntry LICENSE
+422 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+423 silly gunzTarPerm extractEntry lib/index.js
+424 silly gunzTarPerm modified mode [ 'lib/index.js', 436, 420 ]
+425 verbose write writing to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/package.json
+426 info preinstall git-up@2.0.6
+427 verbose readDependencies loading dependencies from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/package.json
+428 silly prepareForInstallMany adding is-ssh@^1.3.0 from git-up dependencies
+429 silly prepareForInstallMany adding parse-url@^1.3.0 from git-up dependencies
+430 verbose readDependencies loading dependencies from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/package.json
+431 silly cache add args [ 'is-ssh@^1.3.0', null ]
+432 verbose cache add spec is-ssh@^1.3.0
+433 silly cache add args [ 'parse-url@^1.3.0', null ]
+434 verbose cache add spec parse-url@^1.3.0
+435 silly cache add parsed spec Result {
+435 silly cache add   raw: 'is-ssh@^1.3.0',
+435 silly cache add   scope: null,
+435 silly cache add   name: 'is-ssh',
+435 silly cache add   rawSpec: '^1.3.0',
+435 silly cache add   spec: '>=1.3.0 <2.0.0',
+435 silly cache add   type: 'range' }
+436 silly addNamed is-ssh@>=1.3.0 <2.0.0
+437 verbose addNamed ">=1.3.0 <2.0.0" is a valid semver range for is-ssh
+438 silly addNameRange { name: 'is-ssh', range: '>=1.3.0 <2.0.0', hasData: false }
+439 silly mapToRegistry name is-ssh
+440 silly mapToRegistry using default registry
+441 silly mapToRegistry registry https://registry.npmjs.org/
+442 silly mapToRegistry data Result {
+442 silly mapToRegistry   raw: 'is-ssh',
+442 silly mapToRegistry   scope: null,
+442 silly mapToRegistry   name: 'is-ssh',
+442 silly mapToRegistry   rawSpec: '',
+442 silly mapToRegistry   spec: 'latest',
+442 silly mapToRegistry   type: 'tag' }
+443 silly mapToRegistry uri https://registry.npmjs.org/is-ssh
+444 verbose addNameRange registry:https://registry.npmjs.org/is-ssh not in flight; fetching
+445 silly cache add parsed spec Result {
+445 silly cache add   raw: 'parse-url@^1.3.0',
+445 silly cache add   scope: null,
+445 silly cache add   name: 'parse-url',
+445 silly cache add   rawSpec: '^1.3.0',
+445 silly cache add   spec: '>=1.3.0 <2.0.0',
+445 silly cache add   type: 'range' }
+446 silly addNamed parse-url@>=1.3.0 <2.0.0
+447 verbose addNamed ">=1.3.0 <2.0.0" is a valid semver range for parse-url
+448 silly addNameRange { name: 'parse-url', range: '>=1.3.0 <2.0.0', hasData: false }
+449 silly mapToRegistry name parse-url
+450 silly mapToRegistry using default registry
+451 silly mapToRegistry registry https://registry.npmjs.org/
+452 silly mapToRegistry data Result {
+452 silly mapToRegistry   raw: 'parse-url',
+452 silly mapToRegistry   scope: null,
+452 silly mapToRegistry   name: 'parse-url',
+452 silly mapToRegistry   rawSpec: '',
+452 silly mapToRegistry   spec: 'latest',
+452 silly mapToRegistry   type: 'tag' }
+453 silly mapToRegistry uri https://registry.npmjs.org/parse-url
+454 verbose addNameRange registry:https://registry.npmjs.org/parse-url not in flight; fetching
+455 verbose request uri https://registry.npmjs.org/is-ssh
+456 verbose request no auth needed
+457 info attempt registry request try #1 at 6:54:56 PM
+458 verbose request using bearer token for auth
+459 verbose etag "DWD000TYCWUAGATLZZVHVAJ62"
+460 http request GET https://registry.npmjs.org/is-ssh
+461 verbose request uri https://registry.npmjs.org/parse-url
+462 verbose request no auth needed
+463 info attempt registry request try #1 at 6:54:56 PM
+464 verbose request using bearer token for auth
+465 verbose etag "BUZSJP4LMLJS28B8NOZ1C55MQ"
+466 http request GET https://registry.npmjs.org/parse-url
+467 http 304 https://registry.npmjs.org/parse-url
+468 verbose headers { 'cache-control': 'max-age=300',
+468 verbose headers   'accept-ranges': 'bytes',
+468 verbose headers   date: 'Fri, 28 Oct 2016 18:54:56 GMT',
+468 verbose headers   via: '1.1 varnish',
+468 verbose headers   connection: 'keep-alive',
+468 verbose headers   'x-served-by': 'cache-lcy1128-LCY',
+468 verbose headers   'x-cache': 'MISS',
+468 verbose headers   'x-cache-hits': '0',
+468 verbose headers   'x-timer': 'S1477680896.583943,VS0,VE211',
+468 verbose headers   vary: 'Accept-Encoding' }
+469 silly get cb [ 304,
+469 silly get   { 'cache-control': 'max-age=300',
+469 silly get     'accept-ranges': 'bytes',
+469 silly get     date: 'Fri, 28 Oct 2016 18:54:56 GMT',
+469 silly get     via: '1.1 varnish',
+469 silly get     connection: 'keep-alive',
+469 silly get     'x-served-by': 'cache-lcy1128-LCY',
+469 silly get     'x-cache': 'MISS',
+469 silly get     'x-cache-hits': '0',
+469 silly get     'x-timer': 'S1477680896.583943,VS0,VE211',
+469 silly get     vary: 'Accept-Encoding' } ]
+470 verbose etag https://registry.npmjs.org/parse-url from cache
+471 verbose get saving parse-url to /home/ubuntu/.npm/registry.npmjs.org/parse-url/.cache.json
+472 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+473 silly addNameRange number 2 { name: 'parse-url', range: '>=1.3.0 <2.0.0', hasData: true }
+474 silly addNameRange versions [ 'parse-url',
+474 silly addNameRange   [ '0.2.0',
+474 silly addNameRange     '1.0.0',
+474 silly addNameRange     '1.1.0',
+474 silly addNameRange     '1.2.0',
+474 silly addNameRange     '1.2.1',
+474 silly addNameRange     '1.3.0',
+474 silly addNameRange     '1.3.1',
+474 silly addNameRange     '1.3.2',
+474 silly addNameRange     '1.3.3',
+474 silly addNameRange     '1.3.4',
+474 silly addNameRange     '1.3.5' ] ]
+475 silly addNamed parse-url@1.3.5
+476 verbose addNamed "1.3.5" is a plain semver version for parse-url
+477 silly cache afterAdd parse-url@1.3.5
+478 verbose afterAdd /home/ubuntu/.npm/parse-url/1.3.5/package/package.json not in flight; writing
+479 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+480 verbose afterAdd /home/ubuntu/.npm/parse-url/1.3.5/package/package.json written
+481 http 304 https://registry.npmjs.org/inherits
+482 verbose headers { 'cache-control': 'max-age=300',
+482 verbose headers   'accept-ranges': 'bytes',
+482 verbose headers   date: 'Fri, 28 Oct 2016 18:54:56 GMT',
+482 verbose headers   via: '1.1 varnish',
+482 verbose headers   connection: 'keep-alive',
+482 verbose headers   'x-served-by': 'cache-lcy1126-LCY',
+482 verbose headers   'x-cache': 'MISS',
+482 verbose headers   'x-cache-hits': '0',
+482 verbose headers   'x-timer': 'S1477680896.278971,VS0,VE691',
+482 verbose headers   vary: 'Accept-Encoding' }
+483 silly get cb [ 304,
+483 silly get   { 'cache-control': 'max-age=300',
+483 silly get     'accept-ranges': 'bytes',
+483 silly get     date: 'Fri, 28 Oct 2016 18:54:56 GMT',
+483 silly get     via: '1.1 varnish',
+483 silly get     connection: 'keep-alive',
+483 silly get     'x-served-by': 'cache-lcy1126-LCY',
+483 silly get     'x-cache': 'MISS',
+483 silly get     'x-cache-hits': '0',
+483 silly get     'x-timer': 'S1477680896.278971,VS0,VE691',
+483 silly get     vary: 'Accept-Encoding' } ]
+484 verbose etag https://registry.npmjs.org/inherits from cache
+485 verbose get saving inherits to /home/ubuntu/.npm/registry.npmjs.org/inherits/.cache.json
+486 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+487 silly cache afterAdd inherits@2.0.1
+488 verbose afterAdd /home/ubuntu/.npm/inherits/2.0.1/package/package.json not in flight; writing
+489 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+490 verbose afterAdd /home/ubuntu/.npm/inherits/2.0.1/package/package.json written
+491 silly install resolved [ { name: 'inherits',
+491 silly install resolved     description: 'Browser-friendly inheritance fully compatible with standard node.js inherits()',
+491 silly install resolved     version: '2.0.1',
+491 silly install resolved     keywords:
+491 silly install resolved      [ 'inheritance',
+491 silly install resolved        'class',
+491 silly install resolved        'klass',
+491 silly install resolved        'oop',
+491 silly install resolved        'object-oriented',
+491 silly install resolved        'inherits',
+491 silly install resolved        'browser',
+491 silly install resolved        'browserify' ],
+491 silly install resolved     main: './inherits.js',
+491 silly install resolved     browser: './inherits_browser.js',
+491 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/inherits.git' },
+491 silly install resolved     license: 'ISC',
+491 silly install resolved     scripts: { test: 'node test' },
+491 silly install resolved     bugs: { url: 'https://github.com/isaacs/inherits/issues' },
+491 silly install resolved     _id: 'inherits@2.0.1',
+491 silly install resolved     dist:
+491 silly install resolved      { shasum: 'b17d08d326b4423e568eff719f91b0b1cbdf69f1',
+491 silly install resolved        tarball: 'https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz' },
+491 silly install resolved     _from: 'inherits@2.0.1',
+491 silly install resolved     _npmVersion: '1.3.8',
+491 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+491 silly install resolved     maintainers: [ [Object] ],
+491 silly install resolved     directories: {},
+491 silly install resolved     _shasum: 'b17d08d326b4423e568eff719f91b0b1cbdf69f1',
+491 silly install resolved     _resolved: 'https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz',
+491 silly install resolved     readme: 'ERROR: No README data found!',
+491 silly install resolved     homepage: 'https://github.com/isaacs/inherits#readme' } ]
+492 info install inherits@2.0.1 into /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util
+493 info installOne inherits@2.0.1
+494 verbose installOne of inherits to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util not in flight; installing
+495 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+496 verbose lock using /home/ubuntu/.npm/_locks/inherits-6c850eaef240ab4d.lock for /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util/node_modules/inherits
+497 silly install write writing inherits 2.0.1 to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util/node_modules/inherits
+498 verbose unbuild node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util/node_modules/inherits
+499 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util/node_modules/inherits is being purged from base /home/ubuntu/workspace/practica-plugins-heroku-alex-moi
+500 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util/node_modules/inherits
+501 verbose tar unpack /home/ubuntu/.npm/inherits/2.0.1/package.tgz
+502 verbose tar unpacking to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util/node_modules/inherits
+503 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util/node_modules/inherits is being purged
+504 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util/node_modules/inherits
+505 silly gunzTarPerm modes [ '755', '644' ]
+506 silly gunzTarPerm extractEntry package.json
+507 silly gunzTarPerm extractEntry README.md
+508 silly gunzTarPerm extractEntry LICENSE
+509 silly gunzTarPerm extractEntry inherits.js
+510 silly gunzTarPerm extractEntry inherits_browser.js
+511 silly gunzTarPerm extractEntry test.js
+512 verbose write writing to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util/node_modules/inherits/package.json
+513 info preinstall inherits@2.0.1
+514 verbose readDependencies loading dependencies from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util/node_modules/inherits/package.json
+515 verbose readDependencies loading dependencies from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util/node_modules/inherits/package.json
+516 silly install resolved []
+517 verbose about to build /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util/node_modules/inherits
+518 info build /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util/node_modules/inherits
+519 info linkStuff inherits@2.0.1
+520 silly linkStuff inherits@2.0.1 has /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util/node_modules as its parent node_modules
+521 verbose linkBins inherits@2.0.1
+522 verbose linkMans inherits@2.0.1
+523 verbose rebuildBundles inherits@2.0.1
+524 info install inherits@2.0.1
+525 info postinstall inherits@2.0.1
+526 verbose unlock done using /home/ubuntu/.npm/_locks/inherits-6c850eaef240ab4d.lock for /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util/node_modules/inherits
+527 verbose about to build /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util
+528 info build /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util
+529 info linkStuff util@0.10.3
+530 silly linkStuff util@0.10.3 has /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules as its parent node_modules
+531 verbose linkBins util@0.10.3
+532 verbose linkMans util@0.10.3
+533 verbose rebuildBundles util@0.10.3
+534 verbose rebuildBundles [ 'inherits' ]
+535 info install util@0.10.3
+536 info postinstall util@0.10.3
+537 verbose unlock done using /home/ubuntu/.npm/_locks/util-aa6a3d829fea127b.lock for /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path/node_modules/util
+538 verbose about to build /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path
+539 info build /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path
+540 info linkStuff path@0.12.7
+541 silly linkStuff path@0.12.7 has /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules as its parent node_modules
+542 verbose linkBins path@0.12.7
+543 verbose linkMans path@0.12.7
+544 verbose rebuildBundles path@0.12.7
+545 verbose rebuildBundles [ 'process', 'util' ]
+546 info install path@0.12.7
+547 info postinstall path@0.12.7
+548 verbose unlock done using /home/ubuntu/.npm/_locks/path-7e6dc023684a3ad7.lock for /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/path
+549 http 304 https://registry.npmjs.org/is-ssh
+550 verbose headers { 'cache-control': 'max-age=300',
+550 verbose headers   'accept-ranges': 'bytes',
+550 verbose headers   date: 'Fri, 28 Oct 2016 18:54:57 GMT',
+550 verbose headers   via: '1.1 varnish',
+550 verbose headers   connection: 'keep-alive',
+550 verbose headers   'x-served-by': 'cache-lcy1151-LCY',
+550 verbose headers   'x-cache': 'MISS',
+550 verbose headers   'x-cache-hits': '0',
+550 verbose headers   'x-timer': 'S1477680896.589651,VS0,VE628',
+550 verbose headers   vary: 'Accept-Encoding' }
+551 silly get cb [ 304,
+551 silly get   { 'cache-control': 'max-age=300',
+551 silly get     'accept-ranges': 'bytes',
+551 silly get     date: 'Fri, 28 Oct 2016 18:54:57 GMT',
+551 silly get     via: '1.1 varnish',
+551 silly get     connection: 'keep-alive',
+551 silly get     'x-served-by': 'cache-lcy1151-LCY',
+551 silly get     'x-cache': 'MISS',
+551 silly get     'x-cache-hits': '0',
+551 silly get     'x-timer': 'S1477680896.589651,VS0,VE628',
+551 silly get     vary: 'Accept-Encoding' } ]
+552 verbose etag https://registry.npmjs.org/is-ssh from cache
+553 verbose get saving is-ssh to /home/ubuntu/.npm/registry.npmjs.org/is-ssh/.cache.json
+554 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+555 silly addNameRange number 2 { name: 'is-ssh', range: '>=1.3.0 <2.0.0', hasData: true }
+556 silly addNameRange versions [ 'is-ssh', [ '1.0.0', '1.1.0', '1.2.0', '1.2.1', '1.3.0' ] ]
+557 silly addNamed is-ssh@1.3.0
+558 verbose addNamed "1.3.0" is a plain semver version for is-ssh
+559 silly cache afterAdd is-ssh@1.3.0
+560 verbose afterAdd /home/ubuntu/.npm/is-ssh/1.3.0/package/package.json not in flight; writing
+561 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+562 verbose afterAdd /home/ubuntu/.npm/is-ssh/1.3.0/package/package.json written
+563 silly install resolved [ { name: 'parse-url',
+563 silly install resolved     version: '1.3.5',
+563 silly install resolved     description: 'An advanced url parser supporting git urls too.',
+563 silly install resolved     main: 'lib/index.js',
+563 silly install resolved     directories: { example: 'example', test: 'test' },
+563 silly install resolved     scripts: { test: 'node test' },
+563 silly install resolved     repository:
+563 silly install resolved      { type: 'git',
+563 silly install resolved        url: 'git+https://github.com/IonicaBizau/parse-url.git' },
+563 silly install resolved     keywords: [ 'parse', 'url', 'node', 'git', 'advanced' ],
+563 silly install resolved     author:
+563 silly install resolved      { name: 'Ionică Bizău',
+563 silly install resolved        email: 'bizauionica@gmail.com',
+563 silly install resolved        url: 'http://ionicabizau.net' },
+563 silly install resolved     license: 'MIT',
+563 silly install resolved     bugs: { url: 'https://github.com/IonicaBizau/parse-url/issues' },
+563 silly install resolved     homepage: 'https://github.com/IonicaBizau/parse-url',
+563 silly install resolved     devDependencies: { tester: '^1.3.1' },
+563 silly install resolved     dependencies: { protocols: '^1.4.0', 'is-ssh': '^1.3.0' },
+563 silly install resolved     files:
+563 silly install resolved      [ 'bin/',
+563 silly install resolved        'app/',
+563 silly install resolved        'lib/',
+563 silly install resolved        'build/',
+563 silly install resolved        'dist/',
+563 silly install resolved        'src/',
+563 silly install resolved        'resources/',
+563 silly install resolved        'menu/',
+563 silly install resolved        'scripts/',
+563 silly install resolved        'cli.js',
+563 silly install resolved        'index.js' ],
+563 silly install resolved     gitHead: 'ce9c0de0d7ae7edfbf352389f4858083c00f8c17',
+563 silly install resolved     _id: 'parse-url@1.3.5',
+563 silly install resolved     _shasum: 'c9f27e266bc81691927a417c77d543a11da31b35',
+563 silly install resolved     _from: 'parse-url@>=1.3.0 <2.0.0',
+563 silly install resolved     _npmVersion: '2.14.2',
+563 silly install resolved     _nodeVersion: '4.0.0',
+563 silly install resolved     _npmUser: { name: 'ionicabizau', email: 'bizauionica@gmail.com' },
+563 silly install resolved     maintainers: [ [Object] ],
+563 silly install resolved     dist:
+563 silly install resolved      { shasum: 'c9f27e266bc81691927a417c77d543a11da31b35',
+563 silly install resolved        tarball: 'https://registry.npmjs.org/parse-url/-/parse-url-1.3.5.tgz' },
+563 silly install resolved     _npmOperationalInternal:
+563 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+563 silly install resolved        tmp: 'tmp/parse-url-1.3.5.tgz_1476199395090_0.879496177425608' },
+563 silly install resolved     _resolved: 'https://registry.npmjs.org/parse-url/-/parse-url-1.3.5.tgz',
+563 silly install resolved     readme: 'ERROR: No README data found!' },
+563 silly install resolved   { name: 'is-ssh',
+563 silly install resolved     version: '1.3.0',
+563 silly install resolved     description: 'Check if an input value is a ssh url or not.',
+563 silly install resolved     main: 'lib/index.js',
+563 silly install resolved     directories: { example: 'example', test: 'test' },
+563 silly install resolved     scripts: { test: 'node test' },
+563 silly install resolved     repository:
+563 silly install resolved      { type: 'git',
+563 silly install resolved        url: 'git+ssh://git@github.com/IonicaBizau/node-is-ssh.git' },
+563 silly install resolved     keywords: [ 'ssh', 'url', 'check', 'parser' ],
+563 silly install resolved     author:
+563 silly install resolved      { name: 'Ionică Bizău',
+563 silly install resolved        email: 'bizauionica@gmail.com',
+563 silly install resolved        url: 'http://ionicabizau.net' },
+563 silly install resolved     license: 'MIT',
+563 silly install resolved     bugs: { url: 'https://github.com/IonicaBizau/node-is-ssh/issues' },
+563 silly install resolved     homepage: 'https://github.com/IonicaBizau/node-is-ssh',
+563 silly install resolved     dependencies: { protocols: '^1.1.0' },
+563 silly install resolved     devDependencies: { tester: '^1.3.1' },
+563 silly install resolved     gitHead: '4d0e9b742fc3a4820d7b7c1e8c9003195913a345',
+563 silly install resolved     _id: 'is-ssh@1.3.0',
+563 silly install resolved     _shasum: 'ebea1169a2614da392a63740366c3ce049d8dff6',
+563 silly install resolved     _from: 'is-ssh@>=1.3.0 <2.0.0',
+563 silly install resolved     _npmVersion: '2.14.2',
+563 silly install resolved     _nodeVersion: '4.0.0',
+563 silly install resolved     _npmUser: { name: 'ionicabizau', email: 'bizauionica@gmail.com' },
+563 silly install resolved     maintainers: [ [Object] ],
+563 silly install resolved     dist:
+563 silly install resolved      { shasum: 'ebea1169a2614da392a63740366c3ce049d8dff6',
+563 silly install resolved        tarball: 'https://registry.npmjs.org/is-ssh/-/is-ssh-1.3.0.tgz' },
+563 silly install resolved     _resolved: 'https://registry.npmjs.org/is-ssh/-/is-ssh-1.3.0.tgz',
+563 silly install resolved     readme: 'ERROR: No README data found!' } ]
+564 info install parse-url@1.3.5 into /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up
+565 info install is-ssh@1.3.0 into /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up
+566 info installOne parse-url@1.3.5
+567 verbose installOne of parse-url to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up not in flight; installing
+568 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+569 info installOne is-ssh@1.3.0
+570 verbose installOne of is-ssh to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up not in flight; installing
+571 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+572 verbose lock using /home/ubuntu/.npm/_locks/parse-url-87c31e4f5f380a00.lock for /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url
+573 verbose lock using /home/ubuntu/.npm/_locks/is-ssh-f7717f61512d855f.lock for /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh
+574 silly install write writing parse-url 1.3.5 to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url
+575 silly install write writing is-ssh 1.3.0 to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh
+576 verbose unbuild node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url
+577 verbose unbuild node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh
+578 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url is being purged from base /home/ubuntu/workspace/practica-plugins-heroku-alex-moi
+579 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url
+580 verbose tar unpack /home/ubuntu/.npm/parse-url/1.3.5/package.tgz
+581 verbose tar unpacking to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url
+582 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url is being purged
+583 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url
+584 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh is being purged from base /home/ubuntu/workspace/practica-plugins-heroku-alex-moi
+585 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh
+586 silly gunzTarPerm modes [ '755', '644' ]
+587 verbose tar unpack /home/ubuntu/.npm/is-ssh/1.3.0/package.tgz
+588 verbose tar unpacking to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh
+589 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh is being purged
+590 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh
+591 silly gunzTarPerm modes [ '755', '644' ]
+592 silly gunzTarPerm extractEntry package.json
+593 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+594 silly gunzTarPerm extractEntry package.json
+595 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+596 silly gunzTarPerm extractEntry README.md
+597 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+598 silly gunzTarPerm extractEntry LICENSE
+599 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+600 silly gunzTarPerm extractEntry .npmignore
+601 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+602 silly gunzTarPerm extractEntry README.md
+603 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+604 silly gunzTarPerm extractEntry lib/index.js
+605 silly gunzTarPerm modified mode [ 'lib/index.js', 436, 420 ]
+606 silly gunzTarPerm extractEntry LICENSE
+607 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+608 silly gunzTarPerm extractEntry CONTRIBUTING.md
+609 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 436, 420 ]
+610 silly gunzTarPerm extractEntry example/index.js
+611 silly gunzTarPerm modified mode [ 'example/index.js', 436, 420 ]
+612 silly gunzTarPerm extractEntry lib/index.js
+613 silly gunzTarPerm modified mode [ 'lib/index.js', 436, 420 ]
+614 silly gunzTarPerm extractEntry test/index.js
+615 silly gunzTarPerm modified mode [ 'test/index.js', 436, 420 ]
+616 verbose write writing to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url/package.json
+617 info preinstall parse-url@1.3.5
+618 verbose readDependencies loading dependencies from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url/package.json
+619 silly prepareForInstallMany adding protocols@^1.4.0 from parse-url dependencies
+620 verbose readDependencies loading dependencies from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url/package.json
+621 silly cache add args [ 'protocols@^1.4.0', null ]
+622 verbose cache add spec protocols@^1.4.0
+623 silly cache add parsed spec Result {
+623 silly cache add   raw: 'protocols@^1.4.0',
+623 silly cache add   scope: null,
+623 silly cache add   name: 'protocols',
+623 silly cache add   rawSpec: '^1.4.0',
+623 silly cache add   spec: '>=1.4.0 <2.0.0',
+623 silly cache add   type: 'range' }
+624 silly addNamed protocols@>=1.4.0 <2.0.0
+625 verbose addNamed ">=1.4.0 <2.0.0" is a valid semver range for protocols
+626 silly addNameRange { name: 'protocols', range: '>=1.4.0 <2.0.0', hasData: false }
+627 silly mapToRegistry name protocols
+628 silly mapToRegistry using default registry
+629 silly mapToRegistry registry https://registry.npmjs.org/
+630 silly mapToRegistry data Result {
+630 silly mapToRegistry   raw: 'protocols',
+630 silly mapToRegistry   scope: null,
+630 silly mapToRegistry   name: 'protocols',
+630 silly mapToRegistry   rawSpec: '',
+630 silly mapToRegistry   spec: 'latest',
+630 silly mapToRegistry   type: 'tag' }
+631 silly mapToRegistry uri https://registry.npmjs.org/protocols
+632 verbose addNameRange registry:https://registry.npmjs.org/protocols not in flight; fetching
+633 verbose request uri https://registry.npmjs.org/protocols
+634 verbose request no auth needed
+635 info attempt registry request try #1 at 6:54:57 PM
+636 verbose request using bearer token for auth
+637 verbose etag "CCSD4O8JUGOU1CKD0MW98OK87"
+638 http request GET https://registry.npmjs.org/protocols
+639 verbose write writing to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh/package.json
+640 info preinstall is-ssh@1.3.0
+641 verbose readDependencies loading dependencies from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh/package.json
+642 silly prepareForInstallMany adding protocols@^1.1.0 from is-ssh dependencies
+643 verbose readDependencies loading dependencies from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh/package.json
+644 silly cache add args [ 'protocols@^1.1.0', null ]
+645 verbose cache add spec protocols@^1.1.0
+646 silly cache add parsed spec Result {
+646 silly cache add   raw: 'protocols@^1.1.0',
+646 silly cache add   scope: null,
+646 silly cache add   name: 'protocols',
+646 silly cache add   rawSpec: '^1.1.0',
+646 silly cache add   spec: '>=1.1.0 <2.0.0',
+646 silly cache add   type: 'range' }
+647 silly addNamed protocols@>=1.1.0 <2.0.0
+648 verbose addNamed ">=1.1.0 <2.0.0" is a valid semver range for protocols
+649 silly addNameRange { name: 'protocols', range: '>=1.1.0 <2.0.0', hasData: false }
+650 silly mapToRegistry name protocols
+651 silly mapToRegistry using default registry
+652 silly mapToRegistry registry https://registry.npmjs.org/
+653 silly mapToRegistry data Result {
+653 silly mapToRegistry   raw: 'protocols',
+653 silly mapToRegistry   scope: null,
+653 silly mapToRegistry   name: 'protocols',
+653 silly mapToRegistry   rawSpec: '',
+653 silly mapToRegistry   spec: 'latest',
+653 silly mapToRegistry   type: 'tag' }
+654 silly mapToRegistry uri https://registry.npmjs.org/protocols
+655 verbose addNameRange registry:https://registry.npmjs.org/protocols already in flight; waiting
+656 http 304 https://registry.npmjs.org/protocols
+657 verbose headers { 'cache-control': 'max-age=300',
+657 verbose headers   'accept-ranges': 'bytes',
+657 verbose headers   date: 'Fri, 28 Oct 2016 18:54:57 GMT',
+657 verbose headers   via: '1.1 varnish',
+657 verbose headers   connection: 'keep-alive',
+657 verbose headers   'x-served-by': 'cache-lcy1128-LCY',
+657 verbose headers   'x-cache': 'MISS',
+657 verbose headers   'x-cache-hits': '0',
+657 verbose headers   'x-timer': 'S1477680897.258912,VS0,VE173',
+657 verbose headers   vary: 'Accept-Encoding' }
+658 silly get cb [ 304,
+658 silly get   { 'cache-control': 'max-age=300',
+658 silly get     'accept-ranges': 'bytes',
+658 silly get     date: 'Fri, 28 Oct 2016 18:54:57 GMT',
+658 silly get     via: '1.1 varnish',
+658 silly get     connection: 'keep-alive',
+658 silly get     'x-served-by': 'cache-lcy1128-LCY',
+658 silly get     'x-cache': 'MISS',
+658 silly get     'x-cache-hits': '0',
+658 silly get     'x-timer': 'S1477680897.258912,VS0,VE173',
+658 silly get     vary: 'Accept-Encoding' } ]
+659 verbose etag https://registry.npmjs.org/protocols from cache
+660 verbose get saving protocols to /home/ubuntu/.npm/registry.npmjs.org/protocols/.cache.json
+661 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+662 silly addNameRange number 2 { name: 'protocols', range: '>=1.4.0 <2.0.0', hasData: true }
+663 silly addNameRange versions [ 'protocols',
+663 silly addNameRange   [ '1.0.0',
+663 silly addNameRange     '1.1.0',
+663 silly addNameRange     '1.2.0',
+663 silly addNameRange     '1.3.0',
+663 silly addNameRange     '1.3.1',
+663 silly addNameRange     '1.4.0',
+663 silly addNameRange     '1.4.1',
+663 silly addNameRange     '1.4.2',
+663 silly addNameRange     '1.4.3' ] ]
+664 silly addNamed protocols@1.4.3
+665 verbose addNamed "1.4.3" is a plain semver version for protocols
+666 silly addNameRange number 2 { name: 'protocols', range: '>=1.1.0 <2.0.0', hasData: true }
+667 silly addNameRange versions [ 'protocols',
+667 silly addNameRange   [ '1.0.0',
+667 silly addNameRange     '1.1.0',
+667 silly addNameRange     '1.2.0',
+667 silly addNameRange     '1.3.0',
+667 silly addNameRange     '1.3.1',
+667 silly addNameRange     '1.4.0',
+667 silly addNameRange     '1.4.1',
+667 silly addNameRange     '1.4.2',
+667 silly addNameRange     '1.4.3' ] ]
+668 silly addNamed protocols@1.4.3
+669 verbose addNamed "1.4.3" is a plain semver version for protocols
+670 silly cache afterAdd protocols@1.4.3
+671 verbose afterAdd /home/ubuntu/.npm/protocols/1.4.3/package/package.json not in flight; writing
+672 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+673 silly cache afterAdd protocols@1.4.3
+674 verbose afterAdd /home/ubuntu/.npm/protocols/1.4.3/package/package.json already in flight; not writing
+675 verbose afterAdd /home/ubuntu/.npm/protocols/1.4.3/package/package.json written
+676 silly install resolved [ { name: 'protocols',
+676 silly install resolved     version: '1.4.3',
+676 silly install resolved     description: 'Get the protocols of an input url.',
+676 silly install resolved     main: 'lib/index.js',
+676 silly install resolved     directories: { example: 'example', test: 'test' },
+676 silly install resolved     scripts: { test: 'node test' },
+676 silly install resolved     repository:
+676 silly install resolved      { type: 'git',
+676 silly install resolved        url: 'git+ssh://git@github.com/IonicaBizau/protocols.git' },
+676 silly install resolved     keywords: [ 'protocols', 'protocol', 'url', 'parse' ],
+676 silly install resolved     author:
+676 silly install resolved      { name: 'Ionică Bizău',
+676 silly install resolved        email: 'bizauionica@gmail.com',
+676 silly install resolved        url: 'http://ionicabizau.net' },
+676 silly install resolved     license: 'MIT',
+676 silly install resolved     bugs: { url: 'https://github.com/IonicaBizau/protocols/issues' },
+676 silly install resolved     homepage: 'https://github.com/IonicaBizau/protocols',
+676 silly install resolved     dependencies: {},
+676 silly install resolved     devDependencies: { tester: '^1.3.1' },
+676 silly install resolved     files:
+676 silly install resolved      [ 'bin/',
+676 silly install resolved        'app/',
+676 silly install resolved        'lib/',
+676 silly install resolved        'build/',
+676 silly install resolved        'dist/',
+676 silly install resolved        'src/',
+676 silly install resolved        'resources/',
+676 silly install resolved        'menu/',
+676 silly install resolved        'scripts/',
+676 silly install resolved        'cli.js',
+676 silly install resolved        'index.js' ],
+676 silly install resolved     gitHead: 'd90b54153f080ed6e877d6db6e50b34a891ccc2d',
+676 silly install resolved     _id: 'protocols@1.4.3',
+676 silly install resolved     _shasum: '635b1c0785f0b389e8a012df1b1afffda9608b76',
+676 silly install resolved     _from: 'protocols@>=1.4.0 <2.0.0',
+676 silly install resolved     _npmVersion: '2.14.2',
+676 silly install resolved     _nodeVersion: '4.0.0',
+676 silly install resolved     _npmUser: { name: 'ionicabizau', email: 'bizauionica@gmail.com' },
+676 silly install resolved     maintainers: [ [Object] ],
+676 silly install resolved     dist:
+676 silly install resolved      { shasum: '635b1c0785f0b389e8a012df1b1afffda9608b76',
+676 silly install resolved        tarball: 'https://registry.npmjs.org/protocols/-/protocols-1.4.3.tgz' },
+676 silly install resolved     _npmOperationalInternal:
+676 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+676 silly install resolved        tmp: 'tmp/protocols-1.4.3.tgz_1476199872090_0.5175128180999309' },
+676 silly install resolved     _resolved: 'https://registry.npmjs.org/protocols/-/protocols-1.4.3.tgz',
+676 silly install resolved     readme: 'ERROR: No README data found!' } ]
+677 info install protocols@1.4.3 into /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url
+678 info installOne protocols@1.4.3
+679 verbose installOne of protocols to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url not in flight; installing
+680 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+681 silly install resolved [ { name: 'protocols',
+681 silly install resolved     version: '1.4.3',
+681 silly install resolved     description: 'Get the protocols of an input url.',
+681 silly install resolved     main: 'lib/index.js',
+681 silly install resolved     directories: { example: 'example', test: 'test' },
+681 silly install resolved     scripts: { test: 'node test' },
+681 silly install resolved     repository:
+681 silly install resolved      { type: 'git',
+681 silly install resolved        url: 'git+ssh://git@github.com/IonicaBizau/protocols.git' },
+681 silly install resolved     keywords: [ 'protocols', 'protocol', 'url', 'parse' ],
+681 silly install resolved     author:
+681 silly install resolved      { name: 'Ionică Bizău',
+681 silly install resolved        email: 'bizauionica@gmail.com',
+681 silly install resolved        url: 'http://ionicabizau.net' },
+681 silly install resolved     license: 'MIT',
+681 silly install resolved     bugs: { url: 'https://github.com/IonicaBizau/protocols/issues' },
+681 silly install resolved     homepage: 'https://github.com/IonicaBizau/protocols',
+681 silly install resolved     dependencies: {},
+681 silly install resolved     devDependencies: { tester: '^1.3.1' },
+681 silly install resolved     files:
+681 silly install resolved      [ 'bin/',
+681 silly install resolved        'app/',
+681 silly install resolved        'lib/',
+681 silly install resolved        'build/',
+681 silly install resolved        'dist/',
+681 silly install resolved        'src/',
+681 silly install resolved        'resources/',
+681 silly install resolved        'menu/',
+681 silly install resolved        'scripts/',
+681 silly install resolved        'cli.js',
+681 silly install resolved        'index.js' ],
+681 silly install resolved     gitHead: 'd90b54153f080ed6e877d6db6e50b34a891ccc2d',
+681 silly install resolved     _id: 'protocols@1.4.3',
+681 silly install resolved     _shasum: '635b1c0785f0b389e8a012df1b1afffda9608b76',
+681 silly install resolved     _from: 'protocols@>=1.4.0 <2.0.0',
+681 silly install resolved     _npmVersion: '2.14.2',
+681 silly install resolved     _nodeVersion: '4.0.0',
+681 silly install resolved     _npmUser: { name: 'ionicabizau', email: 'bizauionica@gmail.com' },
+681 silly install resolved     maintainers: [ [Object] ],
+681 silly install resolved     dist:
+681 silly install resolved      { shasum: '635b1c0785f0b389e8a012df1b1afffda9608b76',
+681 silly install resolved        tarball: 'https://registry.npmjs.org/protocols/-/protocols-1.4.3.tgz' },
+681 silly install resolved     _npmOperationalInternal:
+681 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+681 silly install resolved        tmp: 'tmp/protocols-1.4.3.tgz_1476199872090_0.5175128180999309' },
+681 silly install resolved     _resolved: 'https://registry.npmjs.org/protocols/-/protocols-1.4.3.tgz',
+681 silly install resolved     readme: 'ERROR: No README data found!' } ]
+682 info install protocols@1.4.3 into /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh
+683 info installOne protocols@1.4.3
+684 verbose installOne of protocols to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh not in flight; installing
+685 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+686 verbose lock using /home/ubuntu/.npm/_locks/protocols-d6f8498fc1924320.lock for /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url/node_modules/protocols
+687 verbose lock using /home/ubuntu/.npm/_locks/protocols-5b2881316b8fb927.lock for /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh/node_modules/protocols
+688 silly install write writing protocols 1.4.3 to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url/node_modules/protocols
+689 silly install write writing protocols 1.4.3 to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh/node_modules/protocols
+690 verbose unbuild node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url/node_modules/protocols
+691 verbose unbuild node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh/node_modules/protocols
+692 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url/node_modules/protocols is being purged from base /home/ubuntu/workspace/practica-plugins-heroku-alex-moi
+693 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url/node_modules/protocols
+694 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh/node_modules/protocols is being purged from base /home/ubuntu/workspace/practica-plugins-heroku-alex-moi
+695 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh/node_modules/protocols
+696 verbose tar unpack /home/ubuntu/.npm/protocols/1.4.3/package.tgz
+697 verbose tar unpacking to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url/node_modules/protocols
+698 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url/node_modules/protocols is being purged
+699 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url/node_modules/protocols
+700 verbose tar unpack /home/ubuntu/.npm/protocols/1.4.3/package.tgz
+701 verbose tar unpacking to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh/node_modules/protocols
+702 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh/node_modules/protocols is being purged
+703 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh/node_modules/protocols
+704 silly gunzTarPerm modes [ '755', '644' ]
+705 silly gunzTarPerm modes [ '755', '644' ]
+706 silly gunzTarPerm extractEntry package.json
+707 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+708 silly gunzTarPerm extractEntry package.json
+709 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+710 silly gunzTarPerm extractEntry README.md
+711 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+712 silly gunzTarPerm extractEntry LICENSE
+713 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+714 silly gunzTarPerm extractEntry README.md
+715 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+716 silly gunzTarPerm extractEntry LICENSE
+717 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+718 silly gunzTarPerm extractEntry lib/index.js
+719 silly gunzTarPerm modified mode [ 'lib/index.js', 436, 420 ]
+720 silly gunzTarPerm extractEntry lib/index.js
+721 silly gunzTarPerm modified mode [ 'lib/index.js', 436, 420 ]
+722 verbose write writing to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url/node_modules/protocols/package.json
+723 verbose write writing to /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh/node_modules/protocols/package.json
+724 info preinstall protocols@1.4.3
+725 info preinstall protocols@1.4.3
+726 verbose readDependencies loading dependencies from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url/node_modules/protocols/package.json
+727 verbose readDependencies loading dependencies from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh/node_modules/protocols/package.json
+728 verbose readDependencies loading dependencies from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url/node_modules/protocols/package.json
+729 verbose readDependencies loading dependencies from /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh/node_modules/protocols/package.json
+730 silly install resolved []
+731 verbose about to build /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url/node_modules/protocols
+732 info build /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url/node_modules/protocols
+733 silly install resolved []
+734 verbose about to build /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh/node_modules/protocols
+735 info build /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh/node_modules/protocols
+736 info linkStuff protocols@1.4.3
+737 silly linkStuff protocols@1.4.3 has /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url/node_modules as its parent node_modules
+738 info linkStuff protocols@1.4.3
+739 silly linkStuff protocols@1.4.3 has /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh/node_modules as its parent node_modules
+740 verbose linkBins protocols@1.4.3
+741 verbose linkMans protocols@1.4.3
+742 verbose rebuildBundles protocols@1.4.3
+743 verbose linkBins protocols@1.4.3
+744 verbose linkMans protocols@1.4.3
+745 verbose rebuildBundles protocols@1.4.3
+746 info install protocols@1.4.3
+747 info install protocols@1.4.3
+748 info postinstall protocols@1.4.3
+749 info postinstall protocols@1.4.3
+750 verbose unlock done using /home/ubuntu/.npm/_locks/protocols-d6f8498fc1924320.lock for /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url/node_modules/protocols
+751 verbose about to build /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url
+752 info build /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url
+753 verbose unlock done using /home/ubuntu/.npm/_locks/protocols-5b2881316b8fb927.lock for /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh/node_modules/protocols
+754 verbose about to build /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh
+755 info build /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh
+756 info linkStuff parse-url@1.3.5
+757 silly linkStuff parse-url@1.3.5 has /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules as its parent node_modules
+758 info linkStuff is-ssh@1.3.0
+759 silly linkStuff is-ssh@1.3.0 has /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules as its parent node_modules
+760 verbose linkBins parse-url@1.3.5
+761 verbose linkMans parse-url@1.3.5
+762 verbose rebuildBundles parse-url@1.3.5
+763 verbose linkBins is-ssh@1.3.0
+764 verbose linkMans is-ssh@1.3.0
+765 verbose rebuildBundles is-ssh@1.3.0
+766 verbose rebuildBundles [ 'protocols' ]
+767 info install parse-url@1.3.5
+768 verbose rebuildBundles [ 'protocols' ]
+769 info install is-ssh@1.3.0
+770 info postinstall parse-url@1.3.5
+771 info postinstall is-ssh@1.3.0
+772 verbose unlock done using /home/ubuntu/.npm/_locks/parse-url-87c31e4f5f380a00.lock for /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/parse-url
+773 verbose unlock done using /home/ubuntu/.npm/_locks/is-ssh-f7717f61512d855f.lock for /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up/node_modules/is-ssh
+774 verbose about to build /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up
+775 info build /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up
+776 info linkStuff git-up@2.0.6
+777 silly linkStuff git-up@2.0.6 has /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules as its parent node_modules
+778 verbose linkBins git-up@2.0.6
+779 verbose linkMans git-up@2.0.6
+780 verbose rebuildBundles git-up@2.0.6
+781 verbose rebuildBundles [ 'is-ssh', 'parse-url' ]
+782 info install git-up@2.0.6
+783 info postinstall git-up@2.0.6
+784 verbose unlock done using /home/ubuntu/.npm/_locks/git-up-514d446ad0eaf415.lock for /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse/node_modules/git-up
+785 verbose about to build /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse
+786 info build /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse
+787 info linkStuff git-url-parse@6.0.7
+788 silly linkStuff git-url-parse@6.0.7 has /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules as its parent node_modules
+789 verbose linkBins git-url-parse@6.0.7
+790 verbose linkMans git-url-parse@6.0.7
+791 verbose rebuildBundles git-url-parse@6.0.7
+792 verbose rebuildBundles [ 'git-up' ]
+793 info install git-url-parse@6.0.7
+794 info postinstall git-url-parse@6.0.7
+795 verbose unlock done using /home/ubuntu/.npm/_locks/git-url-parse-1c968b97ade1b635.lock for /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi/node_modules/git-url-parse
+796 verbose about to build /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi
+797 info build /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi
+798 info linkStuff gitbook-start-heroku-alex-moi@0.0.1
+799 silly linkStuff gitbook-start-heroku-alex-moi@0.0.1 has /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules as its parent node_modules
+800 verbose linkBins gitbook-start-heroku-alex-moi@0.0.1
+801 verbose link bins [ { 'gitbook-start-heroku': './gitbook-start-heroku.js' },
+801 verbose link bins   '/home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/.bin',
+801 verbose link bins   false ]
+802 verbose linkMans gitbook-start-heroku-alex-moi@0.0.1
+803 verbose rebuildBundles gitbook-start-heroku-alex-moi@0.0.1
+804 verbose rebuildBundles [ 'git-url-parse', 'path' ]
+805 silly gentlyRm /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/.bin/gitbook-start-heroku is being purged
+806 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/.bin/gitbook-start-heroku
+807 info install gitbook-start-heroku-alex-moi@0.0.1
+808 info postinstall gitbook-start-heroku-alex-moi@0.0.1
+809 verbose unlock done using /home/ubuntu/.npm/_locks/gitbook-start-heroku-ale-75493f89eec463a6.lock for /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/node_modules/gitbook-start-heroku-alex-moi
+810 verbose validateInstall loading /home/ubuntu/workspace/practica-plugins-heroku-alex-moi/package.json for validation
+811 verbose stack Error: write EPIPE
+811 verbose stack     at exports._errnoException (util.js:907:11)
+811 verbose stack     at WriteWrap.afterWrite (net.js:785:14)
+812 verbose cwd /home/ubuntu/workspace/practica-plugins-heroku-alex-moi
+813 error Linux 4.2.0-c9
+814 error argv "/home/ubuntu/.nvm/versions/node/v4.5.0/bin/node" "/home/ubuntu/.nvm/versions/node/v4.5.0/bin/npm" "install" "--save-dev" "gitbook-start-heroku-alex-moi"
+815 error node v4.5.0
+816 error npm  v2.15.9
+817 error code EPIPE
+818 error errno EPIPE
+819 error syscall write
+820 error write EPIPE
+821 error If you need help, you may report this error at:
+821 error     <https://github.com/npm/npm/issues>
+822 verbose exit [ 1, true ]

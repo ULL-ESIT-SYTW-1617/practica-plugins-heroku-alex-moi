@@ -29,13 +29,11 @@ function crear_estructura(dir){
           console.log(err);
     	});
       
-      
       //creamos el directorio txt
       fs.createDir(path.join(process.cwd(), dir , 'txt'), function(err){
         if(err)
           console.log(err);
     	});
-    	
     	
     	//creamos el directorio scripts
     	fs.createDir(path.join(process.cwd(), dir , 'scripts'), function(err){
@@ -43,13 +41,11 @@ function crear_estructura(dir){
           console.log(err);
     	});
     	
-    	
     	//copiamos lo que hay en txt y lo ponemos en el txt creado
       fs.copyDir(path.join(__dirname, '..', 'txt'), path.join(process.cwd(), dir , 'txt'), function (err) {
       	if (err)
           console.error(err)
     	});
-      
       
       //copiamos lo que hay en scripts y lo ponemos en el spripts creado
       fs.copyDir(path.join(__dirname, '..', 'scripts'), path.join(process.cwd(), dir , 'scripts'), function (err) {
@@ -57,13 +53,11 @@ function crear_estructura(dir){
           console.error(err)
     	});
      
-     
       //copiamos gulpfile
       fs.copyFile(path.join(__dirname,'..','gulpfile.js'), path.join(process.cwd(), dir , 'gulpfile.js'),function(err){
         if(err)
           console.log(err);
       });
-    
     
       //copiamos el book
       fs.copyFile(path.join(__dirname,'..','book.json'),path.join(process.cwd(), dir , 'book.json'),function(err){
@@ -76,58 +70,10 @@ function crear_estructura(dir){
         if(err)
         console.log(err);
       }); 
-      
 }
 
 
-if(help){
-  console.log("\nAyuda GitBook-Start-Alex-Moi-Nitesh:"
-              +"\n\nLos argumentos aceptados son:"
-              +"\n -a: Especificar el autor del gitbook"
-              +"\n -n: Especificar el nombre del gitbook"
-              +"\n -c: Especificar el nombre del directorio"
-              +"\n -u: Especificar la url del repositorio git"
-              +"\n -h: Help (Ayuda)"
-              +"\n -d: Deploy en IaaS(iaas.ull.es)"
-              +"\n --iaas_ip: Especificar la IP del IaaS"
-              +"\n --iaas_path: Especificar la PATH de IaaS\n");
-
-}
-else{
-  
-  //OPCION 1
-  if(directorio && !deploy){ //Si se especifica la opcion -c y las -a, -n, -u como opcionales. Este caso NO incluye la opcion deploy-iaas
-    
-      crear_estructura(directorio);
-      
-      //renderizando package.json sin opciones de iaas
-      ejs.renderFile(path.join(__dirname,'..','template','package.ejs'),{ autor: author , nombre: name, repourl: repo_url, ip_iaas_ull: "" , path_iaas_ull: ""}, 
-        function(err,data){
-            if(err) {
-                console.error(err);
-            }
-            if(data) {
-                fs.writeFile(path.join(process.cwd(),directorio,'package.json'), data);
-            }
-        });
-  }
-  
-  else if(deploy && deploy == 'iaas-ull-es'){
-
-    if(ip_iaas && path_iaas)
-    { 
-      
-      var nombre_dir;
-      if(!directorio){                  //Si especificas deploy iaas solo
-          nombre_dir = "Book";
-          crear_estructura(nombre_dir);
-      }
-      if(directorio){                   //Si especificas deploy iaas y ademas el directorio
-          nombre_dir = directorio
-          crear_estructura(nombre_dir);
-      }
-
-        
+function deploy_iaas(nombre_dir){
       crear_estructura(nombre_dir);
       
       child.exec('npm install -g gitbook-start-iaas-ull-es-alex-moi', function(error, stdout, stderr){
@@ -145,7 +91,7 @@ else{
         console.log(stderr);
         console.log(stdout);
       })
-
+  
       //añadir las tareas al gulp
       var iaas = require(path.join(__dirname,'../..','gitbook-start-iaas-ull-es-alex-moi','gitbook-start-iaas-ull-es'));
       iaas.initialize(nombre_dir);
@@ -161,23 +107,12 @@ else{
                 fs.writeFile(path.join(process.cwd(),nombre_dir,'package.json'), data);
             }
         });
-    }
-    else
-      console.log("Especifique la ip y el path del iaas")
-  }
-    
-  else if(deploy && deploy == 'heroku'){
+}
 
-      var nombre_dir;
-      if(!directorio){                  //Si especificas deploy heroku solo
-          nombre_dir = "Book";
-          crear_estructura(nombre_dir);
-      }
-      if(directorio){                   //Si especificas deploy heroku y ademas el directorio
-          nombre_dir = directorio
-          crear_estructura(nombre_dir);
-      }
-      
+
+function deploy_heroku(nombre_dir){
+      crear_estructura(nombre_dir);
+        
       child.exec('npm install -g gitbook-start-heroku-alex-moi', function(error, stdout, stderr){
         if(error)
           console.log(error)
@@ -210,12 +145,71 @@ else{
                 fs.writeFile(path.join(process.cwd(),nombre_dir,'package.json'), data);
             }
         });
+}
+
+
+
+
+if(help){
+  console.log("\nAyuda GitBook-Start-Alex-Moi-Nitesh:"
+              +"\n\nLos argumentos aceptados son:"
+              +"\n -a: Especificar el autor del gitbook"
+              +"\n -n: Especificar el nombre del gitbook"
+              +"\n -c: Especificar el nombre del directorio"
+              +"\n -u: Especificar la url del repositorio git"
+              +"\n -h: Help (Ayuda)"
+              +"\n -d: Deploy en IaaS(iaas.ull.es)"
+              +"\n --iaas_ip: Especificar la IP del IaaS"
+              +"\n --iaas_path: Especificar la PATH de IaaS\n");
+
+}
+else{
+  
+  var nombre_dir;
+  if(!directorio){                         
+      nombre_dir = "Book";
   }
-  else if(deploy == 'iaas-ull-es' && deploy == 'heroku'){
-    console.log("Instalando los dos paquetes")
+  if(directorio){                           
+      nombre_dir = directorio
   }
-  else{
-    console.log("Especifique al menos el nombre del directorio");
+  
+  //OPCION 1
+  if(directorio && !deploy){ //Si se especifica la opcion -c y las -a, -n, -u como opcionales. Este caso NO incluye la opcion deploy-iaas
+    
+      crear_estructura(nombre_dir);
+      
+      //renderizando package.json sin opciones de iaas
+      ejs.renderFile(path.join(__dirname,'..','template','package.ejs'),{ autor: author , nombre: name, repourl: repo_url, ip_iaas_ull: "" , path_iaas_ull: ""}, 
+        function(err,data){
+            if(err) {
+                console.error(err);
+            }
+            if(data) {
+                fs.writeFile(path.join(process.cwd(),nombre_dir,'package.json'), data);
+            }
+        });
   }
+
+  else if(deploy && deploy == 'iaas-ull-es'){
+
+    if(ip_iaas && path_iaas){ 
+          deploy_iaas(nombre_dir);                  //funcion que añade la funcionalidad del iaas
+    }
+    else
+          console.log("Especifique la ip y el path del iaas")
+  }
+    
+  else if(deploy && deploy == 'heroku'){
+          deploy_heroku(nombre_dir);                //funcion que añade la funcionalidad de heroku
+  }
+  
+  else if(deploy[0] == 'iaas-ull-es' && deploy[1] == 'heroku' || deploy[0] == 'heroku' && deploy[1] == 'iaas-ull-es'){
+          deploy_iaas(nombre_dir); 
+          deploy_heroku(nombre_dir); 
+  }
+  
+  else
+          console.log("Especifique al menos el nombre del directorio");
+  
 
 }

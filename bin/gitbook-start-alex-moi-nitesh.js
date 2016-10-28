@@ -16,8 +16,8 @@ var help        = argv.h;
 
 //Despliegue en iaas
 var deploy      = argv.d;
-var ip_iaas     = argv.iaas_ip;
-var path_iaas   = argv.iaas_path;
+var ip_iaas     = argv.iaas_ip    || '';
+var path_iaas   = argv.iaas_path  || '';
 
 
 
@@ -96,7 +96,7 @@ function desplegar(nombre_dir, paquete){
       var servicio = require(path.join(__dirname,'../..','gitbook-start-'+paquete+'-alex-moi','gitbook-start-'+paquete+''));
       servicio.initialize(nombre_dir);
           
-      /*    
+          
       //renderizando package.json con opciones de iaas
       ejs.renderFile(path.join(__dirname,'..','template','package.ejs'),{ autor: author , nombre: name, repourl: repo_url, ip_iaas_ull: ip_iaas , path_iaas_ull: path_iaas}, 
         function(err,data){
@@ -106,86 +106,8 @@ function desplegar(nombre_dir, paquete){
             if(data) {
                 fs.writeFile(path.join(process.cwd(),nombre_dir,'package.json'), data);
             }
-        });*/
-}
-
-function deploy_iaas(nombre_dir){
-      crear_estructura(nombre_dir);
-        
-      child.exec('npm install -g gitbook-start-iaas-ull-es-alex-moi', function(error, stdout, stderr){
-        if(error)
-          console.log(error)
-        
-        console.log(stderr);
-        console.log(stdout);
-      })
-      
-      child.exec('npm install --save-dev gitbook-start-iaas-ull-es-alex-moi', function(error, stdout, stderr){
-        if(error)
-          console.log(error)
-        
-        console.log(stderr);
-        console.log(stdout);
-      })
-         
-          
-      //añadir las tareas al gulp
-      var iaas = require(path.join(__dirname,'../..','gitbook-start-iaas-ull-es-alex-moi','gitbook-start-iaas-ull-es'));
-      iaas.initialize(nombre_dir);
-          
-          
-      //renderizando package.json
-      ejs.renderFile(path.join(__dirname,'..','template','package.ejs'),{ autor: author , nombre: name, repourl: repo_url, ip_iaas_ull: ip_iaas , path_iaas_ull: path_iaas}, 
-        function(err,data){
-            if(err) {
-                console.error(err);
-            }
-            if(data) {
-                fs.writeFile(path.join(process.cwd(),nombre_dir,'package.json'), data);
-            }
         });
 }
-
-
-
-function deploy_heroku(nombre_dir){
-      crear_estructura(nombre_dir);
-        
-      child.exec('npm install -g gitbook-start-heroku-alex-moi', function(error, stdout, stderr){
-        if(error)
-          console.log(error)
-        
-        console.log(stderr);
-        console.log(stdout);
-      })
-      
-      child.exec('npm install --save-dev gitbook-start-heroku-alex-moi', function(error, stdout, stderr){
-        if(error)
-          console.log(error)
-        
-        console.log(stderr);
-        console.log(stdout);
-      })
-         
-          
-      //añadir las tareas al gulp
-      var heroku = require(path.join(__dirname,'../..','gitbook-start-heroku-alex-moi','gitbook-start-heroku'));
-      heroku.initialize(nombre_dir);
-          
-          
-      //renderizando package.json
-      ejs.renderFile(path.join(__dirname,'..','template','package.ejs'),{ autor: author , nombre: name, repourl: repo_url, ip_iaas_ull: "" , path_iaas_ull: ""}, 
-        function(err,data){
-            if(err) {
-                console.error(err);
-            }
-            if(data) {
-                fs.writeFile(path.join(process.cwd(),nombre_dir,'package.json'), data);
-            }
-        });
-}
-
-
 
 
 if(help){
@@ -231,7 +153,7 @@ else{
   else if(deploy && deploy == 'iaas-ull-es'){
 
     if(ip_iaas && path_iaas){ 
-          deploy_iaas(nombre_dir);                  //funcion que añade la funcionalidad del iaas
+          desplegar(nombre_dir, 'iaas-ull-es')               
     }
     else
           console.log("Especifique la ip y el path del iaas")
@@ -239,15 +161,13 @@ else{
     
   //OPCION 3: deploy heroku
   else if(deploy && deploy == 'heroku'){
-          deploy_heroku(nombre_dir);                //funcion que añade la funcionalidad de heroku
+          desplegar(nombre_dir, 'heroku')              
   }
   
   
   //OPCION 4: deploy en iaas y en heroku
   else if(deploy[0] == 'iaas-ull-es' && deploy[1] == 'heroku' || deploy[0] == 'heroku' && deploy[1] == 'iaas-ull-es'){
     if(ip_iaas && path_iaas){ 
-          /*deploy_iaas(nombre_dir); 
-          deploy_heroku(nombre_dir); */
           desplegar(nombre_dir, 'iaas-ull-es')
           desplegar(nombre_dir, 'heroku')
     }

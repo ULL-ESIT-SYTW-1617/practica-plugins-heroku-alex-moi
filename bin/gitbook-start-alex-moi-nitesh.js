@@ -166,16 +166,15 @@ if(help){
 else{
   
   var nombre_dir;
-  if(!directorio){                         
-      nombre_dir = "Book";
-  }
-  if(directorio){                           
+  if(directorio) 
       nombre_dir = directorio
-  }
+  else                           
+      nombre_dir = "Book";
   
-  //OPCION 1
+  
+  //OPCION 1: Crear estructura para gitbook
   if(directorio && !deploy){ //Si se especifica la opcion -c y las -a, -n, -u como opcionales. Este caso NO incluye la opcion deploy-iaas
-    
+      
       crear_estructura(nombre_dir);
       
       //renderizando package.json sin opciones de iaas
@@ -190,6 +189,7 @@ else{
         });
   }
 
+  //OPCION 2: deploy iaas
   else if(deploy && deploy == 'iaas-ull-es'){
 
     if(ip_iaas && path_iaas){ 
@@ -199,13 +199,21 @@ else{
           console.log("Especifique la ip y el path del iaas")
   }
     
+  //OPCION 3: deploy heroku
   else if(deploy && deploy == 'heroku'){
           deploy_heroku(nombre_dir);                //funcion que añade la funcionalidad de heroku
   }
   
+  
+  //OPCION 4: deploy en iaas y en heroku
   else if(deploy[0] == 'iaas-ull-es' && deploy[1] == 'heroku' || deploy[0] == 'heroku' && deploy[1] == 'iaas-ull-es'){
+    if(ip_iaas && path_iaas){ 
           deploy_iaas(nombre_dir); 
           deploy_heroku(nombre_dir); 
+    }
+    else
+          console.log("Especifique la ip y el path del iaas")
+
   }
   
   else

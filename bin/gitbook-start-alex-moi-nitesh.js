@@ -42,13 +42,13 @@ function crear_estructura(dir){
     	});
     	
     	//copiamos lo que hay en txt y lo ponemos en el txt creado
-      fs.copyDir(path.join(__dirname, '..', 'txt'), path.join(process.cwd(), dir , 'txt'), function (err) {
+      fs.copyDir(path.join(__dirname, '..', 'template', 'txt'), path.join(process.cwd(), dir , 'txt'), function (err) {
       	if (err)
           console.error(err)
     	});
       
       //copiamos lo que hay en scripts y lo ponemos en el spripts creado
-      fs.copyDir(path.join(__dirname, '..', 'scripts'), path.join(process.cwd(), dir , 'scripts'), function (err) {
+      fs.copyDir(path.join(__dirname, '..','template', 'scripts'), path.join(process.cwd(), dir , 'scripts'), function (err) {
       	if (err)
           console.error(err)
     	});
@@ -60,13 +60,13 @@ function crear_estructura(dir){
       });
     
       //copiamos el book
-      fs.copyFile(path.join(__dirname,'..','book.json'),path.join(process.cwd(), dir , 'book.json'),function(err){
+      fs.copyFile(path.join(__dirname,'..','template','book.json'),path.join(process.cwd(), dir , 'book.json'),function(err){
         if(err)
         console.log(err);
       });
       
       //copiamos server.js
-      fs.copyFile(path.join(__dirname,'..','server.js'),path.join(process.cwd(), dir , 'server.js'),function(err){
+      fs.copyFile(path.join(__dirname,'..','template','server.js'),path.join(process.cwd(), dir , 'server.js'),function(err){
         if(err)
         console.log(err);
       }); 
@@ -97,7 +97,7 @@ function desplegar(nombre_dir, paquete){
       servicio.initialize(nombre_dir);
           
           
-      //renderizando package.json con opciones de iaas
+      //renderizando package.json
       ejs.renderFile(path.join(__dirname,'..','template','package.ejs'),{ autor: author , nombre: name, repourl: repo_url, ip_iaas_ull: ip_iaas , path_iaas_ull: path_iaas}, 
         function(err,data){
             if(err) {
@@ -137,8 +137,8 @@ else{
       
       crear_estructura(nombre_dir);
       
-      //renderizando package.json sin opciones de iaas
-      ejs.renderFile(path.join(__dirname,'..','template','package.ejs'),{ autor: author , nombre: name, repourl: repo_url, ip_iaas_ull: "" , path_iaas_ull: ""}, 
+      //renderizando package.json
+      ejs.renderFile(path.join(__dirname,'..','template','package.ejs'),{ autor: author , nombre: name, repourl: repo_url, ip_iaas_ull: ip_iaas , path_iaas_ull: path_iaas}, 
         function(err,data){
             if(err) {
                 console.error(err);

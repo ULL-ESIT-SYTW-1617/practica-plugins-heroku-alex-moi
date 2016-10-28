@@ -114,82 +114,77 @@ else{
   
   else if(deploy && deploy == 'iaas-ull-es'){
 
-      //OPCION 2
-      if(!directorio){//Si especificas deploy iaas solo
-        
-          crear_estructura("Book");
-          
-          child.exec('npm install --save-dev gitbook-start-iaas-ull-es-alex-moi', function(error, stdout, stderr){
-            if(error)
-              console.log(error)
-            
-            console.log(stderr);
-            console.log(stdout);
-          })
-          
-          //añadir las tareas al gulp
-          var iaas = require(path.join(__dirname,'../..','gitbook-start-iaas-ull-es-alex-moi','gitbook-start-iaas-ull-es'));
-          iaas.initialize("Book");
-          
-          
-          //renderizando package.json con opciones de iaas
-          ejs.renderFile(path.join(__dirname,'..','template','package.ejs'),{ autor: author , nombre: name, repourl: repo_url, ip_iaas_ull: ip_iaas , path_iaas_ull: path_iaas}, 
-            function(err,data){
-                if(err) {
-                    console.error(err);
-                }
-                if(data) {
-                    fs.writeFile(path.join(process.cwd(),"Book",'package.json'), data);
-                }
-            });
+    if(ip_iaas && path_iaas)
+    { 
+      
+      var nombre_dir;
+      if(!directorio){                  //Si especificas deploy iaas solo
+          nombre_dir = "Book";
+          crear_estructura(nombre_dir);
       }
-    
+      if(directorio){                   //Si especificas deploy iaas y ademas el directorio
+          nombre_dir = directorio
+          crear_estructura(nombre_dir);
+      }
 
-      //OPCION 3
-      if(directorio){//Si especificas la opcion -c y las opciones del deploy-iaas. Este es el caso de pasar TODOS los argumentos
         
-          crear_estructura(directorio);
+      crear_estructura(nombre_dir);
+      
+      child.exec('npm install -g gitbook-start-iaas-ull-es-alex-moi', function(error, stdout, stderr){
+        if(error)
+          console.log(error)
+        
+        console.log(stderr);
+        console.log(stdout);
+      })
+      
+      child.exec('npm install --save-dev gitbook-start-iaas-ull-es-alex-moi', function(error, stdout, stderr){
+        if(error)
+          console.log(error)
+        
+        console.log(stderr);
+        console.log(stdout);
+      })
+
+      //añadir las tareas al gulp
+      var iaas = require(path.join(__dirname,'../..','gitbook-start-iaas-ull-es-alex-moi','gitbook-start-iaas-ull-es'));
+      iaas.initialize(nombre_dir);
           
-          child.exec('npm install --save-dev gitbook-start-iaas-ull-es-alex-moi', function(error, stdout, stderr){
-            if(error)
-              console.log(error)
-            
-            console.log(stderr);
-            console.log(stdout);
-          })
-            
-            
-          //añadir las tareas al gulp  
-          var iaas = require(path.join(__dirname,'../..','gitbook-start-iaas-ull-es-alex-moi','gitbook-start-iaas-ull-es'));
-          iaas.initialize(directorio);
-         
-         
-          //renderizando package.json con opciones de iaas
-          ejs.renderFile(path.join(__dirname,'..','template','package.ejs'),{ autor: author , nombre: name, repourl: repo_url, ip_iaas_ull: ip_iaas , path_iaas_ull: path_iaas}, 
-            function(err,data){
-                if(err) {
-                    console.error(err);
-                }
-                if(data) {
-                    fs.writeFile(path.join(process.cwd(),directorio,'package.json'), data);
-                }
-            });
-      }
+          
+      //renderizando package.json con opciones de iaas
+      ejs.renderFile(path.join(__dirname,'..','template','package.ejs'),{ autor: author , nombre: name, repourl: repo_url, ip_iaas_ull: ip_iaas , path_iaas_ull: path_iaas}, 
+        function(err,data){
+            if(err) {
+                console.error(err);
+            }
+            if(data) {
+                fs.writeFile(path.join(process.cwd(),nombre_dir,'package.json'), data);
+            }
+        });
+    }
+    else
+      console.log("Especifique la ip y el path del iaas")
   }
     
   else if(deploy && deploy == 'heroku'){
 
-      //OPCION 2
       var nombre_dir;
-      if(!directorio){        //Si especificas deploy heroku solo
+      if(!directorio){                  //Si especificas deploy heroku solo
           nombre_dir = "Book";
           crear_estructura(nombre_dir);
       }
-      else{                   //Si especificas deploy heroku y ademas el directorio
+      if(directorio){                   //Si especificas deploy heroku y ademas el directorio
           nombre_dir = directorio
           crear_estructura(nombre_dir);
       }
       
+      child.exec('npm install -g gitbook-start-heroku-alex-moi', function(error, stdout, stderr){
+        if(error)
+          console.log(error)
+        
+        console.log(stderr);
+        console.log(stdout);
+      })
       
       child.exec('npm install --save-dev gitbook-start-heroku-alex-moi', function(error, stdout, stderr){
         if(error)
@@ -202,7 +197,7 @@ else{
           
       //añadir las tareas al gulp
       var heroku = require(path.join(__dirname,'../..','gitbook-start-heroku-alex-moi','gitbook-start-heroku'));
-      heroku.initialize("Book");
+      heroku.initialize(nombre_dir);
           
           
       //renderizando package.json
@@ -215,6 +210,9 @@ else{
                 fs.writeFile(path.join(process.cwd(),nombre_dir,'package.json'), data);
             }
         });
+  }
+  else if(deploy == 'iaas-ull-es' && deploy == 'heroku'){
+    console.log("Instalando los dos paquetes")
   }
   else{
     console.log("Especifique al menos el nombre del directorio");

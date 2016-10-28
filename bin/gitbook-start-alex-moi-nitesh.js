@@ -15,7 +15,7 @@ var help        = argv.h;
 
 
 //Despliegue en iaas
-var deploy_iaas = argv.d;
+var deploy      = argv.d;
 var ip_iaas     = argv.iaas_ip;
 var path_iaas   = argv.iaas_path;
 
@@ -96,7 +96,7 @@ if(help){
 else{
   
   //OPCION 1
-  if(directorio && !deploy_iaas){ //Si se especifica la opcion -c y las -a, -n, -u como opcionales. Este caso NO incluye la opcion deploy-iaas
+  if(directorio && !deploy){ //Si se especifica la opcion -c y las -a, -n, -u como opcionales. Este caso NO incluye la opcion deploy-iaas
     
       crear_estructura(directorio);
       
@@ -112,10 +112,10 @@ else{
         });
   }
   
-  else if(deploy_iaas){
+  else if(deploy && deploy == 'iaas-ull-es'){
 
       //OPCION 2
-      if(!directorio){//Si especificas deploy solo
+      if(!directorio){//Si especificas deploy iaas solo
         
           crear_estructura("Book");
           
@@ -175,6 +175,46 @@ else{
                 }
             });
       }
+  }
+    
+  else if(deploy && deploy == 'heroku'){
+
+      //OPCION 2
+      var nombre_dir;
+      if(!directorio){        //Si especificas deploy heroku solo
+          nombre_dir = "Book";
+          crear_estructura(nombre_dir);
+      }
+      else{                   //Si especificas deploy heroku y ademas el directorio
+          nombre_dir = directorio
+          crear_estructura(nombre_dir);
+      }
+      
+      
+      child.exec('npm install --save-dev gitbook-start-heroku-alex-moi', function(error, stdout, stderr){
+        if(error)
+          console.log(error)
+        
+        console.log(stderr);
+        console.log(stdout);
+      })
+         
+          
+      //añadir las tareas al gulp
+      var heroku = require(path.join(__dirname,'../..','gitbook-start-heroku-alex-moi','gitbook-start-heroku'));
+      heroku.initialize("Book");
+          
+          
+      //renderizando package.json
+      ejs.renderFile(path.join(__dirname,'..','template','package.ejs'),{ autor: author , nombre: name, repourl: repo_url, ip_iaas_ull: "" , path_iaas_ull: ""}, 
+        function(err,data){
+            if(err) {
+                console.error(err);
+            }
+            if(data) {
+                fs.writeFile(path.join(process.cwd(),nombre_dir,'package.json'), data);
+            }
+        });
   }
   else{
     console.log("Especifique al menos el nombre del directorio");

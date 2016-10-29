@@ -72,7 +72,7 @@ function crear_estructura(dir){
       }); 
       
       //copiamos .gitignore
-      fs.copyFileSync(path.join(__dirname,'..','template','.gitignore'), path.join(process.cwd(), dir , '.gitignore'),function(err){
+      fs.copyFileSync(path.join(__dirname,'..','template','.npmignore'), path.join(process.cwd(), dir , '.gitignore'),function(err){
         if(err)
           console.log(err);
       });

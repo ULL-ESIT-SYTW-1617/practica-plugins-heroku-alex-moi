@@ -2,8 +2,8 @@
 
 ## Introducción
 
-El objetivo de esta práctica es extender el package NodeJS publicado en npm en una práctica anterior con una nueva funcionalidad que permita que los usuarios con conocimientos de NodeJS puedan extender la conducta del ejecutable para que este realice el despliegue en una máquina de **iaas.ull.es**.
-Para ello, el plugin utilizado se puede encontrar en [gitbook-start-iaas-ull-es-alex-moi](https://www.npmjs.com/package/gitbook-start-iaas-ull-es-alex-moi).
+El objetivo de esta práctica es extender el package NodeJS publicado en npm en una práctica anterior con una nueva funcionalidad que permita que los usuarios con conocimientos de NodeJS puedan extender la conducta del ejecutable para que este realice el despliegue en **Heroku**.
+Para ello, el plugin utilizado se puede encontrar en [gitbook-start-heroku-alex-moi](https://www.npmjs.com/package/gitbook-start-heroku-alex-moi).
 
 ##Instalación
 
@@ -24,11 +24,11 @@ Para ejecutar, ponemos el siguiente comando:
 *    -c: Especificar el nombre del directorio
 *    -u: Especificar la url del repositorio git
 *    -h: Help (ayuda)
-*    -d: Realizar un deploy a IaaS
+*    -d: Realizar un deploy a (IaaS o Heroku)
 
-Si queremos que al ejecutar el comando se nos genere una estructura de directorios es necesario especificar la opción '-c', excepto en el caso de realizar un deploy-iaas(opción -d) en cuyo caso se genera un directorio por defecto.
+Si queremos que al ejecutar el comando se nos genere una estructura de directorios es necesario especificar la opción '-c', excepto en el caso de realizar un deploy(opción -d) en cuyo caso se genera un directorio por defecto llamado Book cuyo nombre podrá ser modificado si se desea.
 
-El resto de opciones(-a, -n, -u, -h) son totalmente opcionales en cualquier ejecución del paquete que se desee realizar.
+El resto de opciones(-a, -n, -u) son totalmente opcionales en cualquier ejecución del paquete que se desee realizar, es decir, son opciones complementarias que facilitan la configuración de nuestro package.json.
 
 Una vez instalado y ejecutado, hacemos:
 
@@ -37,7 +37,7 @@ npm install
 gitbook install
 ```
 
-Una vez completado los "ficheros.md" de nuestro book, para construirlo y publicarlo en github (gh-pages) hacemos:
+Una vez completado los "ficheros.md" de nuestro GitBook, para construirlo y publicarlo en github (gh-pages) hacemos:
 
 ```shell
 gulp build
@@ -48,43 +48,54 @@ Un ejemplo de la versión final del gitbook sería: [Ejemplo](https://alu0100782
 
 ##Funcionamiento del argumento "-d"
 
-Este argumento se corresponde con la opción del deploy en el iaas y tiene asociado dos argumentos mas que deben ser especificados obligatoriamente, ademas de los restantes de los que dispone el paquete.
+Este argumento se corresponde con la opción del deploy en el iaas o heroku.
 
-Por tanto, la ejecución se llevaría a cabo de la siguiente manera:
 
+IaaS
+ : Para hacer el despliegue en el IaaS es necesario proporcionar dos argumentos mas que deben ser especificados obligatoriamente, ademas de los restantes de los que dispone el paquete.
+
+ Por tanto, la ejecución se llevaría a cabo de la siguiente manera:
 `gitbook-start-alex-moi-nitesh -d iaas-ull-es [Obligatorias] [Otras Opciones]`
 
-[Obligatorias] serían:
-```
+ [Obligatorias] serían:
+ ```
 --iaas_ip: Especificar la IP del IaaS
-	Ejemplo: 10.2.1.128
+			Ejemplo: 10.2.1.128
 --iaas_path: Especificar la PATH de IaaS(sin '/' al final de la ruta)
-	Ejemplo: /home/nombre_usuario/ruta
-```
+			Ejemplo: /home/nombre_usuario/ruta
+ ```
 
+ [Otras Opciones] serían:
 
-[Otras Opciones] serían:
-
-```
+ ```
 -a: Especificar el autor del gitbook
 -n: Especificar el nombre del gitbook
 -c: Especificar el nombre del directorio
 -u: Especificar la url del repositorio git
-```
+-d: Especificar otro deploy, en este caso a Heroku
+ ```
 
-Ejemplo con la parte obligatoria:
-`gitbook-start-alex-moi-nitesh -d iaas-ull-es --iaas_ip 192.162.30.50 --iaas_path /home/usuario/MyPath`
+Heroku
+ : Para hacer el despliegue en heroku bastará con especificar la opcion -d seguido de 'heroku'.
 
-Con la parte obligarotia, se crea el gitbook:
-*   sin un nombre del autor
-*   sin un nombre del gitbook
-*   sin una URL para el repositorio
-*   con nombre del directorio: /Book (por defecto)
+ Por tanto, la ejecución se llevaría a cabo de la siguiente manera:
+`gitbook-start-alex-moi-nitesh -d heroku [Otras Opciones]`
 
-Ahora bien, si queremos especificarle las otras opciones, pondríamos:
+ [Otras Opciones] serían:
 
-*   Ejemplo Completo:
-`gitbook-start-alex-moi-nitesh -d iaas-ull-es --iaas_ip 192.162.30.50 --iaas_path /home/usuario/MyPath -a AuthorsName -n MyGitbook -c /MyDirectorio -u http://MyUrl.git` 
+ ```
+-a: Especificar el autor del gitbook
+-n: Especificar el nombre del gitbook
+-c: Especificar el nombre del directorio
+-u: Especificar la url del repositorio git
+-d: Especificar otro deploy, en este caso al IaaS
+ ```
+
+##Ejemplo de ejecución
+
+En este ejemplo se pasan todos los argumentos de los que dispone el paquete, en este caso se creará un directorio con el nombre especificado (opción -c), se añadirán al package.json el autor del gitbook (opción -a),  el nombre del gitbook(opción -n),  la url del repositorio github (opcion -u), la ip y el path para desplegar en el IaaS y se añadirán las tareas correspondientes al gulpfile para poder realizar los deploy.
+
+`gitbook-start-alex-moi-nitesh -d iaas-ull-es --iaas_ip 192.162.30.50 --iaas_path /home/usuario/MyPath -d heroku -a AuthorsName -n MyGitbook -c MyDirectory -u http://MyUrl.git` 
 
 
 ## Enlaces importantes

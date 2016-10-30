@@ -13,7 +13,7 @@ var paquete = require(cwd+'/package.json');
 gulp.task('buildeploy', ['build', 'deploy']);
 
 gulp.task('build', function() {
-  return gulp.src('').pipe(shell(['./scripts/generate-gitbook']));
+  return gulp.src('').pipe(shell(['gitbook install; ./scripts/generate-gitbook']));
 });
 
 gulp.task('deploy', function () {
